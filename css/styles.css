@@ -1,0 +1,18 @@
+h1, h2 {
+  color: #1ac2a6; }
+
+.h1Title {
+  font-size: calc(1.275rem + 0.3vw); }
+  @media (min-width: 1200px) {
+    .h1Title {
+      font-size: 1.5rem; } }
+
+.h2Title {
+  font-size: 1rem; }
+
+.nav-item, .dropdown-item {
+  text-align: center;
+  white-space: nowrap; }
+  @media (min-width: 768px) {
+    .nav-item, .dropdown-item {
+      text-align: left !important; } }

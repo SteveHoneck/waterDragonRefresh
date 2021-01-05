@@ -1,0 +1,24 @@
+@import "../node_modules/rfs/scss";
+
+$color-heading: #1ac2a6;
+
+h1, h2 {
+    color: $color-heading;
+}
+
+.h1Title {
+    @include rfs(1.5rem);
+}
+
+.h2Title {
+    @include rfs(1rem);
+}
+
+
+.nav-item, .dropdown-item {
+    text-align: center; //addition of centered text on nav-items & dropdown-items so BS class="text-center" doesn't have to be added to each li nav item.  
+    white-space: nowrap; //added to keep 'Mailing List' from wrapping
+    @media (min-width: 768px) { //Addition of BS class="text-md-left" @media call so that BS class doesn't have to be added to each item.  MD used because that's when nav snaps from list to icon.
+        text-align: left !important;
+    }
+}
