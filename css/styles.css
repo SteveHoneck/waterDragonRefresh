@@ -1,5 +1,13 @@
-h1, h2 {
+h1, h2, h3 {
+  font-family: "Segoe UI Light", sans-serif;
   color: #1ac2a6; }
+
+.trans {
+  transition: transform 1s; }
+
+.trans:hover {
+  transform: scale(1.2);
+  transition-duration: 1s; }
 
 .h1Title {
   font-size: calc(1.275rem + 0.3vw); }
@@ -10,9 +18,56 @@ h1, h2 {
 .h2Title {
   font-size: 1rem; }
 
+.h3Title {
+  font-size: calc(1.525rem + 3.3vw); }
+  @media (min-width: 1200px) {
+    .h3Title {
+      font-size: 4rem; } }
+
 .nav-item, .dropdown-item {
   text-align: center;
   white-space: nowrap; }
   @media (min-width: 768px) {
     .nav-item, .dropdown-item {
       text-align: left !important; } }
+
+body {
+  background-image: linear-gradient(to bottom right, #325d32, #71be71); }
+  @media (max-width: 455px) {
+    body {
+      padding-top: 190px; } }
+  @media (min-width: 456px) {
+    body {
+      padding-top: 150px; } }
+
+a {
+  text-decoration: none !important; }
+
+footer a {
+  color: rgba(255, 255, 255, 0.5); }
+
+.cardLink {
+  color: black; }
+
+.cardStyle {
+  background-color: #c5c9cc;
+  border-radius: 25px; }
+
+.imgLPos {
+  z-index: 100;
+  margin-right: -25px; }
+
+.imgRPos {
+  z-index: 100;
+  margin-left: -25px; }
+
+.imgRounded {
+  border-radius: 25px; }
+
+@media (max-width: 455px) {
+  h3[id^="link"] {
+    scroll-margin-top: 200px; } }
+
+@media (min-width: 456px) {
+  h3[id^="link"] {
+    scroll-margin-top: 170px; } }

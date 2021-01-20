@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf=8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="node_modules/@fortawesome\fontawesome-free/css/fontawesome.min.css" />
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script> <!--required for Bootstrap-->
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script> <!--required for Bootstrap-->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script> <!--required for JQuery used in scripts.js file, must come before bootstrap.min.js or some Boostrap features wont work (modal)-->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> <!--required for Bootstrap-->
+    <script src="js/scripts.js"></script>
+
+    <title>Chinese Water Dragon Care Page</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">
+                <div class="media">
+                    <img src="img/navBrand2.png" alt="Water dragon picture" width="125" class="d-inline-block align-self-center mr-2"/>
+                    <div class="media-body align-self-center">
+                        <h2 class="h2Title text-center text-wrap">Chinese</h2> 
+                        <h1 class="h1Title text-center text-wrap">Water Dragon</h1>
+                        <h2 class="h2Title text-center text-wrap">Care Page</h2>
+                    </div>
+                </div>
+            </a>
+            <button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown active" >
+                        <a class="nav-link dropdown-toggle" href="#" id="navDrop" data-toggle="dropdown">Care</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="care.html">General Info</a>
+                            <a class="dropdown-item" href="care.html#linkDiet">Diet</a>
+                            <a class="dropdown-item" href="care.html#linkAilments">Ailments</a>
+                            <a class="dropdown-item" href="care.html#linkBreeding">Breeding</a>
+                            <a class="dropdown-item" href="care.html#linkBehavior">Behavior</a>
+                            <a class="dropdown-item" href="care.html#linkEnclosures">Enclosures</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="store.html">Store</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="mailing.html">Mailing List</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+<!--Add breadcrumbs here-->
+
+    <div class="jumbotron mt-3 mx-4">
+        <h1 class="display-4 text-center">Care</h1>
+        <div id="accordionWelcome">
+            <p class="lead text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet dolor est. Morbi ornare bibendum libero vel posuere. Cras imperdiet iaculis mi, in sit.</p>
+            <hr class="my-4">
+            <div class="card">
+                <div role="tab" class="card-header text-center">
+                    <a data-toggle="collapse" data-target="#welcome">Click to Read More</a>
+                    <div class="collapse" id="welcome" data-parent="#accordionWelcome">
+                        <div class="card-body">
+                            <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non dapibus justo. Donec commodo magna vel gravida dapibus nam.</p>
+                            <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lobortis orci in arcu pretium, vel molestie nunc maximus. Nulla justo. </p>
+                            <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus porttitor felis id laoreet. Sed a ex non metus finibus pulvinar. Donec orci.</p>
+                            <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque efficitur tortor eros, at pulvinar diam finibus ac. Vivamus at justo id velit finibus blandit sed sit amet odio. Sed rhoncus tincidunt volutpat. Integer faucibus molestie ex, at placerat sit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid px-0 my-2">
+        <div class="row mx-2 mx-md-4 align-items-center">
+            <div class="col-md-3 px-0 imgLPos d-none d-md-block">
+                <img src="img/navBrand.jpg" alt="Water dragon picture" class="img-fluid imgRounded shadow"/>
+            </div>
+            <div id="accordionGenInfo" class="col-md-9 shadow px-1 px-md-5 pb-5 cardStyle">
+                <h3 class="h3Title text-center py-4">General Information</h3>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3"> <!-- px-1 improves readability by shrinking padding around text for small devices. px-md-3 restors padding to ALMOST card-body standard (3 = 1rem, standard is 1.25rem)-->
+                        <a class="cardLink" data-toggle="collapse" data-target="#g1">Genus Species</a>
+                        <div class="collapse" id="g1" data-parent="#accordionGenInfo">
+                            <div class="card-body px-2 px-md-3"> <!-- px-2 improves readability by shrinking padding around text for small devices. px-md-3 restors padding to ALMOST card-body standard (3 = 1rem, standard is 1.25rem)-->
+                                <p>Physignathus cocincinus- Green Water Dragon</p>
+                                <p>Physignathus lesueurii- Australian Water Dragon</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fringilla elit tristique mattis finibus. Sed finibus enim mi, ut convallis augue commodo non odio.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In iaculis rhoncus luctus. Vivamus a ultricies est. Suspendisse blandit malesuada enim, sit amet consequat tellus ullamcorper eu. Praesent vel purus condimentum, elementum ipsum eu, scelerisque dolor. Vestibulum at ullamcorper nisi. Lorem ipsum dolor sit amet volutpat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#g2">Size and Description</a>
+                        <div class="collapse" id="g2" data-parent="#accordionGenInfo">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id nisl tincidunt dolor volutpat ornare id et sapien. Duis sagittis neque felis, eu malesuada lectus elementum et. Nam ultricies purus arcu, id scelerisque tellus ultricies et. Nullam id nunc cursus, consectetur felis vitae, suscipit purus. Vivamus condimentum lectus ipsum, a finibus tellus pharetra vel. Mauris ornare eleifend.</p>
+                                <p>Aliquam sit amet consectetur quam. Pellentesque viverra. Ut rhoncus dolor non facilisis gravida. Mauris non tincidunt orci. Sed facilisis tortor justo, malesuada volutpat mauris pretium a. Quisque sit amet purus a velit suscipit condimentum id non ex. Fusce vehicula consequat magna, a lacinia libero ultrices non. Proin vel purus ex. Cras semper ante elit. Praesent at lectus ligula. Donec consequat mi eget euismod sollicitudin. Quisque rhoncus mauris at.</p>
+                                <p>Integer sit amet lacus vel ante sodales imperdiet nulla. Morbi eget nunc at orci tempor fringilla vel euismod magna. Duis posuere vehicula turpis, sit amet interdum nisi suscipit venenatis. Fusce justo urna, finibus non imperdiet finibus, consequat eget nisi. Pellentesque ligula mauris, tempus quis dui ac, venenatis vehicula ante. Donec posuere consequat cursus. Suspendisse eget vulputate lacus. Curabitur sed massa in quam commodo scelerisque ac in augue. Aenean malesuada augue nibh, eu eleifend nibh rutrum vel cras.</p>
+                                <p>Aliquam non erat semper, blandit augue eget, mattis nec. Donec vulputate, metus ut porta feugiat, ipsum urna venenatis nunc, vel vestibulum odio turpis in lacus. Sed accumsan odio non augue venenatis vulputate. Praesent pellentesque placerat nulla a vehicula. Ut eget justo quis nulla aliquam varius ut ut massa. Nullam cursus justo justo, et finibus felis porta in. Sed at velit orci. Nullam hendrerit odio a felis dignissim, sit amet facilisis arcu pellentesque. Praesent congue arcu quis nisi posuere maximus. Vivamus finibus fermentum ex non sollicitudin. Donec faucibus justo id imperdiet posuere. Proin mattis ex ut velit ultricies, eu facilisis lacus eleifend. Pellentesque ornare risus eu ex facilisis finibus. Vivamus lobortis duis.</p>
+                                <p>Donec dolor ante, tincidunt nec elementum non cras amet. Duis sit amet maximus dui, eu malesuada nulla. Nunc lacinia turpis aliquet, porttitor felis sit amet, pharetra sapien. Nunc sagittis egestas velit, finibus maximus nibh varius in. Etiam et pellentesque augue. Cras laoreet fringilla ligula, at euismod elit maximus eu. Cras et sodales metus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum volutpat pellentesque sem ac sagittis. Integer cursus velit.</p>
+                                <p>Vestibulum condimentum urna quis velit varius, at lobortis velit sagittis. Phasellus sed suscipit felis. Curabitur consequat sem vel porttitor vestibulum egestas. </p>
+                                <p>Duis ut lorem tempus, varius mi a, viverra lectus. Donec facilisis non dolor id imperdiet. Quisque rutrum odio tortor, et fermentum purus fringilla sed. Praesent convallis porttitor nibh, sed porttitor magna fermentum sed. Vivamus malesuada sollicitudin mi non vehicula. Mauris porttitor consectetur ipsum, sollicitudin malesuada libero fringilla ac. Praesent a dapibus nunc, nec ultrices justo. Aliquam mauris diam, sollicitudin sit amet massa a, finibus pellentesque leo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus at.</p>
+                                <p>Donec mattis venenatis nisl placerat rhoncus. Integer sit amet sodales tortor, et volutpat purus. Integer eget mi sit amet nulla convallis aliquam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce ligula turpis, ultrices in maximus et, vulputate ac tellus. Pellentesque commodo sed dolor sed hendrerit. Suspendisse sit amet mollis leo, id consectetur tortor. Ut elementum mauris vitae tincidunt rutrum. Praesent elementum, purus in mollis lacinia, orci orci lacinia ante, vitae tincidunt justo turpis id justo. Sed mollis vestibulum nisl. Nullam nec convallis leo. Pellentesque in sagittis turpis, non facilisis tellus. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#g3">Habitat</a>
+                        <div class="collapse" id="g3" data-parent="#accordionGenInfo">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Etiam luctus ipsum lectus, sed finibus mauris ultrices vel. Nam nec velit ultrices, egestas lacus ullamcorper placerat.</p>
+                                <p>Vestibulum venenatis imperdiet dolor, at ullamcorper libero pulvinar vel. Nam pulvinar venenatis turpis quis hendrerit. Nam viverra, urna et posuere tristique, lorem orci.</p>
+                                <p>Donec magna quam, laoreet quis consectetur ut, vestibulum at urna. Sed vitae ipsum ac lectus vulputate orci aliquam.</p>
+                                <p>Vestibulum quis nunc dignissim tellus varius molestie nec et augue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus donec.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#g4">Life Span</a>
+                        <div class="collapse" id="g4" data-parent="#accordionGenInfo">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Aliquam at lectus suscipit, porttitor risus sit amet, tincidunt odio. Donec ac pretium nisl. In consequat lorem id interdum egestas. Nulla tincidunt dolor nec lacus mattis, in volutpat diam sollicitudin. Cras id vestibulum urna, at sodales dolor. Donec venenatis tempus neque aliquam aliquet. Curabitur odio lacus, dictum at suscipit eu, iaculis eu libero. Cras hendrerit ex nisi, sit amet volutpat dolor euismod vitae. Maecenas nec lectus sem. Phasellus porta placerat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#g5">Sexing</a>
+                        <div class="collapse" id="g5" data-parent="#accordionGenInfo">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget sollicitudin tortor. Integer dignissim nunc nec iaculis pretium. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec pulvinar dictum molestie. Maecenas a odio laoreet, pellentesque augue ac, congue velit. Proin ullamcorper justo nec velit placerat hendrerit. Ut blandit tempor odio vel fringilla. Nunc ac tristique orci. Maecenas laoreet lorem vitae efficitur placerat. Duis maximus sagittis mattis. Cras non ligula sit amet tortor mollis iaculis vitae ut ligula. Nullam ut ligula quis massa pretium dictum. Nam eget sem quis ex mollis accumsan. Morbi eget ullamcorper risus. Donec scelerisque, orci in porta vestibulum, elit justo tempor diam, eu convallis turpis libero nec risus. Nam condimentum viverra dolor. Morbi varius tempus nisi porta fringilla. Donec sagittis finibus massa vel ornare. Cras molestie id neque non iaculis. Ut semper arcu sapien, et accumsan leo consequat efficitur. Aenean ullamcorper tincidunt rhoncus. Nunc dapibus eu nulla vitae sagittis. In metus augue, tincidunt a commodo eget, rutrum sed augue. Donec et nisl quis urna sodales congue congue vel justo. Curabitur blandit finibus libero. </p>
+                                <h4>The Young Dragon</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur orci aliquam.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et rutrum leo. Curabitur vulputate sed elit in sollicitudin. Donec a mi at erat varius rutrum vitae ut justo. Morbi consectetur nulla sit amet turpis pulvinar, eu pulvinar augue feugiat. Aenean ut est quis neque convallis consequat ac id massa. Vestibulum ut ipsum vitae ipsum accumsan vestibulum. Duis iaculis nulla lobortis vehicula mollis lectus.</p>
+                                <h4>The Juvenile Dragon</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis fringilla lorem mauris, vitae hendrerit nibh egestas sit amet. Nulla vulputate ultricies tellus, id tempus felis viverra ut. Sed nec nibh eget lacus pulvinar condimentum. Integer vel metus vitae urna suscipit rutrum a nam.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque non neque eu iaculis. Sed fermentum metus eu diam tempus gravida. Vivamus dignissim dui vitae lorem odio. </p>
+                                <h4>The Male Dragon</h4>
+                                <p>Vivamus orci nulla, venenatis non quam.</p>
+                                <ul>
+                                    <li>Cras quis ante ac arcu blandit maximus hendrerit sed magna efficitur.</li>
+                                    <li>Vivamus pharetra justo nec molestie volutpat. Vestibulum eu risus at nunc.</li>
+                                    <li>Donec vitae est eleifend, sagittis sit.
+                                        <ul>
+                                            <li>Vestibulum tempor tortor placerat congue mollis. Donec lobortis fringilla arcu, sed facilisis quam pulvinar id. Duis euismod lorem risus, non feugiat ligula elementum nec. Phasellus porttitor orci at risus ullamcorper, ac suscipit augue ornare. Mauris quam felis, congue vel tristique non, sagittis nec leo. Nam ullamcorper ac neque id turpis.
+                                                <ul>
+                                                    <li>Sed finibus orci velit, ac odio. </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>        
+                                    <li>In in pretium neque. Nulla ullamcorper id eros quis accumsan. Quisque aliquam ex quis mattis accumsan. </li>
+                                    <li>Integer a justo sed ligula viverra fringilla ut sed ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices accumsan. 
+                                        <ul>
+                                            <li>Nullam dictum libero at sapien ullamcorper porta. Vestibulum eu bibendum orci, ut iaculis nisi. Donec tempor sed.</li>
+                                        </ul>
+                                    </li>
+                                    <li>Donec sollicitudin, turpis sed imperdiet elementum, tellus dui fringilla ex, a facilisis sapien neque non ligula. Maecenas nec volutpat ipsum, ac tristique ex. Donec dapibus, enim eget venenatis turpis. 
+                                        <ul>
+                                            <li>Vivamus consectetur, mi eu lacinia semper, dui ex pellentesque tellus, sed tempus urna augue eget nulla. Donec interdum pharetra orci est. </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <p>Duis pulvinar orci at felis rhoncus iaculis. Proin aliquet elementum est in posuere. Fusce mollis nisi et blandit laoreet. Nulla vestibulum purus a felis pharetra auctor. Duis porta metus ut dui suscipit placerat. </p>
+                                <h4>In mollis bibendum euismod porttitor. </h4>
+                                <p>Proin tincidunt convallis ligula, ac tempus ante aliquam eu. Donec sollicitudin condimentum metus nec tempor. Sed vel sollicitudin nulla. Quisque fermentum fermentum risus, fringilla viverra libero porta ac. Ut non ultrices enim, sed placerat dui. Fusce accumsan vulputate metus, in mi.</p>
+                                <p>Duis massa odio, lobortis nec felis et, consequat molestie nibh. Cras ipsum nisl, maximus vel ipsum ac, fermentum pulvinar felis. Donec accumsan, nunc sit amet fringilla fermentum, nisi orci convallis lorem, in molestie libero quam eget lorem. Proin nec convallis massa. Vivamus vel libero pulvinar, eleifend tellus ac, porta neque. Vivamus vestibulum libero eget augue ornare sagittis dui. </p>
+                                <p>Maecenas et imperdiet arcu, blandit elementum nibh. Vestibulum commodo dignissim massa at sodales. Proin tristique arcu nec nisi sodales, eu porttitor magna consectetur. Vestibulum ullamcorper, tortor ac auctor sagittis, nisi nisi lobortis odio, eu lobortis dui urna consequat massa. Donec quis placerat arcu. Duis sit quam. </p>
+                                <p>Vestibulum id lorem velit. Quisque non ligula ultricies, cursus tortor eu, malesuada est. Cras pellentesque ex eget lectus ullamcorper placerat. Nulla rhoncus nisi arcu, sed pretium ante posuere nec. Vivamus luctus consequat laoreet. In eu porttitor nec. </p>
+                                <p>Donec nec urna eleifend, tincidunt quam nec, fermentum velit. Phasellus massa augue, bibendum sed felis at, rutrum lobortis nulla. Ut ac justo at purus quis. </p>
+                                <p>Sed sed vestibulum justo. Nullam in ante felis. Nunc posuere id tortor.</p>
+                                <ul>
+                                    <li>Nulla vitae dui convallis, luctus orci non, condimentum ligula. Suspendisse eget condimentum justo. Suspendisse id hendrerit volutpat.</li>
+                                    <li>Quisque quis cras amet. </li>
+                                    <li>Donec nisl tortor, consequat non bibendum at, commodo vestibulum nisl. Suspendisse potenti augue. </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#g6">Thinking about a companion for your dragon</a>
+                        <div class="collapse" id="g6" data-parent="#accordionGenInfo">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Donec nec commodo est. Fusce eleifend euismod urna, vitae porttitor sem pellentesque non. Donec maximus tortor non ante tincidunt vulputate. Quisque fermentum ornare justo ornare dapibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec a dui turpis. Curabitur ut ultricies ligula. Morbi at accumsan tellus. Duis et ullamcorper eros. Vestibulum libero lorem, sollicitudin commodo urna duis. </p>
+                                <p>Aenean molestie sapien vitae pretium scelerisque. Maecenas laoreet magna dictum leo dictum, vel aliquet nisi tempor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Morbi malesuada urna vitae ex eu. </p>
+                                <p>Ut bibendum aliquam suscipit. Cras blandit erat ut lorem aliquam, eget posuere eros tincidunt. Nunc iaculis dictum tellus, ut auctor magna fringilla ut. Quisque pellentesque in. </p>
+                                <p>Praesent malesuada, dolor sed ornare lacinia, tellus purus auctor elit, ac laoreet arcu erat ut est. Pellentesque orci libero, malesuada vitae luctus feugiat, varius id urna. Nullam ac elit ipsum. Pellentesque cursus nibh cursus, volutpat lorem vel, sodales leo. Pellentesque ac. </p>
+                                <p>In mattis efficitur nisl, quis pellentesque diam venenatis non. Aliquam erat volutpat. Pellentesque interdum urna ac elit viverra tincidunt. Suspendisse rutrum mauris vitae nisi commodo faucibus. Fusce dolor sapien, scelerisque et ultricies id, rutrum a leo. Quisque lacinia bibendum massa nec euismod. Phasellus consequat, lorem sed tempor suscipit, mauris ante pulvinar orci, ut ullamcorper eros lacus vitae nisl. Etiam tristique lacinia diam eget auctor. Donec dignissim nec mauris eget scelerisque. Sed pulvinar arcu id. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#g7">Moving on - the next step in the care of your Chinese Water Dragon</a>
+                        <div class="collapse" id="g7" data-parent="#accordionGenInfo">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Aliquam erat volutpat. Cras consectetur ullamcorper elit, at facilisis sapien rhoncus porttitor. Sed hendrerit ante mollis turpis blandit pharetra at ac tellus. In hac habitasse platea dictumst. Nam a tortor eleifend, dapibus diam id, venenatis nibh. Phasellus consectetur auctor lorem, sit amet mattis lacus fermentum at. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam pulvinar aenean. </p>
+                                <p>Vestibulum id erat at nisl fermentum dapibus eu sit amet mauris. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque sollicitudin dolor eu fringilla aliquam. Nullam ex nunc, cursus vel congue non, vehicula sed nisi. Proin finibus, diam vitae sodales sed. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row align-items-center mx-2 mx-md-4 mt-4">
+            <div id="accordionDiet" class="col-md-9 shadow px-1 px-md-5 pb-5 cardStyle">
+                <h3 id="linkDiet" class="h3Title text-center py-4">Diet</h3>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#d1">How often to feed your dragon</a>
+                        <div class="collapse" id="d1" data-parent="#accordionDiet">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Vestibulum ullamcorper, velit sit amet ornare lacinia justo. </p>
+                                <p>Aenean rutrum tristique elit nec commodo. Vivamus efficitur feugiat turpis, et sagittis lectus ultricies in. Nam vel neque lectus. Donec vitae pharetra ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt tincidunt tortor, vel mattis justo semper ac. Morbi laoreet. </p>
+                                <p>Morbi accumsan ipsum nec congue consequat. Etiam mattis nibh sed nulla feugiat gravida. Aliquam nisi elit, ullamcorper iaculis felis ac sapien. </p>
+                                <p>Cras ultrices auctor nulla vitae feugiat. Donec gravida nulla ut dapibus lobortis. Proin luctus orci a nisl interdum consectetur. Donec gravida mi sed velit placerat porta. Sed ultricies, metus at iaculis rutrum, purus purus gravida nisl, sit amet placerat enim enim at metus. Donec non non. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#d2">Food Items to offer</a>
+                        <div class="collapse" id="d2" data-parent="#accordionDiet">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Suspendisse semper sagittis ipsum non finibus. Mauris ultricies pellentesque urna id varius. Maecenas lacinia tellus at leo hendrerit, ac vehicula erat mollis. Donec id pharetra orci, sed ornare nisi. Maecenas ut tristique urna. Proin placerat lacus felis, ut feugiat ante egestas tristique. Cras porta arcu id urna pulvinar posuere. Cras efficitur at nisi vitae condimentum. Sed urna ex, semper vitae nibh sodales, luctus placerat justo. Phasellus consequat euismod quam et posuere. Sed quis dui at eros luctus gravida. Duis nec hendrerit enim. Nullam eleifend, ligula a ultricies tincidunt, lacus elit placerat mauris, vitae accumsan quam risus eu quam. Aliquam biam. </p>
+                                <p>Cras dictum placerat erat convallis feugiat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec at lobortis nisi. Mauris fringilla velit pellentesque lorem ultrices congue. Pellentesque vel mi rutrum, maximus lacus at, laoreet ante. Sed imperdiet congue tortor. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#d3">Insects</a>
+                        <div class="collapse" id="d3" data-parent="#accordionDiet">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Proin ornare massa vel ex pharetra, a pharetra ipsum congue. Duis vel ipsum vitae odio vehicula maximus vel vitae urna. Nulla ac mauris id elit sollicitudin sodales. Mauris aliquam dictum ipsum, ut pretium neque posuere auctor. Maecenas sed sapien ut urna suscipit lobortis a sit amet est. Aenean eu arcu posuere, finibus ante at, dapibus orci. Nunc ut placerat arcu, nec varius ligula. Donec vel porttitor risus. Aenean quis sagittis nisi, et luctus amet.</p>
+                                <p>Mauris in consectetur lorem, sit amet convallis urna. Nam diam augue, ultricies in lorem vestibulum, dignissim dapibus purus. Fusce dui sapien, vestibulum sit amet vehicula et, hendrerit eget leo. Ut imperdiet nisi nec libero faucibus hendrerit. Praesent faucibus cras. </p>
+                                <p>Sed quis laoreet massa. In sollicitudin quam quis massa ullamcorper, at volutpat velit pharetra. Phasellus commodo bibendum commodo. Interdum et malesuada fames ac ante ipsum primis in tincidunt. </p>
+                                <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam interdum consectetur lectus ac dignissim. Aenean eu bibendum nulla, vitae ultricies sapien. Pellentesque vel ultricies neque. Vestibulum justo risus, consectetur id porta non, rhoncus in nulla. Cras dignissim urna eget diam blandit placerat. Pellentesque vulputate eros.</p>
+                                <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur sit amet odio ultrices, posuere ligula sit amet, ultrices metus. Nullam sodales elit quis sapien maximus, vel consectetur lectus egestas. Nullam quis lacus tincidunt ipsum eleifend ultrices at eget risus. Phasellus vitae fermentum est, eu porttitor nisi. Ut ut efficitur dui. In hac habitasse platea dictumst. Aliquam lacinia finibus pretium. Nam porta nulla eu mauris finibus, ac scelerisque nibh facilisis. Praesent sollicitudin at tellus vel tempor. Etiam non neque ac nibh imperdiet euismod quis ultrices nisi. Vivamus efficitur eget nulla et aliquam est. </p>
+                                <p>Maecenas ut luctus ex, vitae placerat lectus. Sed viverra ex vel est ultricies vulputate. Integer id facilisis sapien. Ut in sapien vel ligula consectetur lacinia. Nulla ullamcorper faucibus lorem ut placerat. Duis eros nisi, bibendum sed pulvinar at, ultricies non velit. Sed in porttitor leo. In hac turpis duis. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#d4">Earthworms</a>
+                        <div class="collapse" id="d4" data-parent="#accordionDiet">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Aliquam ultricies, neque in elementum congue, orci nisi volutpat turpis, at feugiat felis eros ac sapien. Nulla neque massa, ultricies sit. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#d5">Whole Prey</a>
+                        <div class="collapse" id="d5" data-parent="#accordionDiet">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Sed fermentum at lacus vitae dictum. Nunc ut laoreet elit. Vestibulum sit amet nibh ac nisl finibus congue et ac erat. Donec id dui justo. Curabitur id dui quis elit vestibulum accumsan non sit amet metus. Aliquam suscipit ornare finibus. Quisque lacinia facilisis sagittis. Phasellus vitae nunc at elit imperdiet rhoncus. Duis malesuada faucibus urna, et mollis ex tincidunt sodales. Nunc eget diam nec dui euismod aliquet in id justo. Donec commodo eget est vel pharetra. Donec scelerisque finibus neque nec varius. Sed luctus, leo in molestie porttitor, dui dolor laoreet nulla, sed viverra est nisi sit amet nec. </p>
+                                <p>Proin pulvinar velit ac lectus rhoncus placerat. Phasellus tempor erat diam, non convallis ipsum suscipit ut. Vivamus venenatis efficitur libero, eu luctus nunc scelerisque aliquet. Pellentesque tincidunt lacus in turpis tempor, nec ullamcorper mauris aliquet. Curabitur porta mattis viverra. Morbi eleifend sapien ex. </p>
+                                <p>Curabitur accumsan tortor ac consequat iaculis. Pellentesque venenatis lectus ac nisl pulvinar mollis. Mauris tristique turpis vel nulla facilisis posuere. Aliquam erat volutpat. Mauris commodo quam ut velit facilisis, non molestie. </p>
+                                <p>Fusce eget est lorem. Vestibulum luctus massa vel velit convallis, vel ornare nisl mollis. Curabitur vitae faucibus nisi. Phasellus dignissim hendrerit erat sit amet auctor. Nullam convallis eros sed dolor tincidunt, a mattis nisi molestie. Nulla euismod, nunc aliquam porttitor lobortis, purus magna fermentum eros, accumsan venenatis libero felis et eros. Fusce quis mauris sem. Aliquam rutrum diam suscipit gravida feugiat. Aliquam eleifend quam purus, a tincidunt odio vestibulum eu. Cras nec accumsan. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#d6">Why you should NOT feed live Rodent prey to your reptiles</a>
+                        <div class="collapse" id="d6" data-parent="#accordionDiet">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Maecenas augue nisl, condimentum eget tincidunt id, ullamcorper quis enim. Aliquam venenatis mauris est, id congue erat volutpat posuere. Ut mollis nec lorem nec elementum. Phasellus lacinia sit amet elit in maximus. Nullam vel velit tristique, aliquam tortor id, facilisis risus. Pellentesque vestibulum dolor at fringilla mollis. Suspendisse arcu felis, mollis at tristique id, elementum et nunc. Vestibulum pulvinar augue ut condimentum gravida. Sed id porttitor orci, ac congue diam. Aliquam et justo eros. Pellentesque convallis a quam at tempus. Aliquam quam felis, tristique nec orci ut nunc. </p>
+                                <p>Vivamus porttitor malesuada dolor, ut elementum orci scelerisque in. Ut posuere dui eros, luctus fringilla nibh posuere vel. Proin molestie, diam eget sodales lobortis, massa eu. </p>
+                                <p>Morbi non fringilla mauris. Integer sit amet lorem erat. Suspendisse ut orci sollicitudin nibh aliquet lacinia. Nunc dignissim sed enim non porttitor. Mauris tincidunt lacus ligula, vitae maximus justo consectetur sed. Maecenas finibus enim sit amet accumsan tristique. Mauris posuere dui vel sapien efficitur imperdiet. Quisque facilisis feugiat nulla eu tincidunt. Nunc pharetra nisl tortor, id egestas ligula auctor vel. Duis at auctor mi, quis dictum elit. Nulla semper laoreet massa, id blandit turpis fermentum a. Ut eget sodales dui. Duis tempor, orci eu convallis faucibus, neque odio accumsan elit, quis semper orci massa ut eros. Nullam ut tincidunt nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus luctus tortor a enim auctor, a porta urna ullamcorper. Etiam nibh nisl eros. </p>
+                                <p>Donec at felis sollicitudin, eleifend mauris vitae, elementum massa. In venenatis sed dolor sit amet fermentum. Nam interdum, lorem eu gravida imperdiet, magna eros tempor lacus, quis fringilla velit nulla in mi. Phasellus volutpat non ante in finibus. Phasellus porta cursus dignissim. Nulla at turpis eget ipsum cursus tincidunt non sit amet ex. Suspendisse venenatis enim nec lectus elementum, luctus ultrices ex pulvinar. Nulla ullamcorper risus ut enim id. </p>
+                                <p>Sed at neque eu urna lacinia elementum. Quisque maximus, lorem vel auctor lobortis, nibh mi elementum odio, id fringilla justo justo nec dui. Vivamus porttitor, massa vel donec. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#d7">Fruit and Veggies</a>
+                        <div class="collapse" id="d7" data-parent="#accordionDiet">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Pellentesque in feugiat tortor, sed blandit libero. Donec tincidunt libero massa, non placerat nisl euismod ut. Pellentesque faucibus tellus at neque pharetra eleifend. Ut orci leo, varius eu nibh id, dignissim consequat nulla. Integer gravida nunc non tellus porta, id ultrices tortor fermentum. Nullam efficitur metus nisl, ac pellentesque eleifend. </p>
+                                <p>Aenean eget neque enim. Quisque sit amet mi at augue convallis varius ut et nisi. Vivamus at leo ac nibh convallis aliquet et vitae mauris. Phasellus quis enim id odio aliquet interdum laoreet donec. </p>
+                                <p>Sed sed odio sapien. Vivamus ultrices sed ipsum vitae accumsan. Sed fermentum vulputate metus eu vestibulum. Pellentesque faucibus rhoncus fringilla. Curabitur metus lorem, volutpat sed magna ac, consequat mollis ipsum. Vestibulum finibus semper posuere. Donec faucibus tortor et turpis ultrices, nec scelerisque libero sodales. Quisque felis neque, tempor vel fringilla nec, viverra in orci. Donec vel leo urna. Ut tristique diam a velit posuere semper. Vivamus consequat massa id diam maximus ornare. Sed laoreet odio ac massa cursus maximus. Ut in aenean. </p>
+                                <p>Morbi egestas, lacus id condimentum pellentesque, massa nisl rhoncus justo, vel vulputate nisi velit sit amet amet. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#d8">Content of some common food items</a>
+                        <div class="collapse" id="d8" data-parent="#accordionDiet">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Duis auctor turpis augue, eget dignissim felis pellentesque at. Ut eget lorem cursus dapibus nam. </p>
+                                <div class="table-responsive">
+                                    <table class="table table-light table-sm table-hover">
+                                        <thead class="thead-light">
+                                        <tr>
+                                            <th scope="col">Food</th>
+                                            <th scope="col">% Prot.</th>
+                                            <th scope="col">% Fat</th>
+                                            <th scope="col">% Ca</th>
+                                            <th scope="col">% Phos.</th>
+                                            <th scope="col">KCal/gm</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <th scope="row">Cras in. </th>
+                                            <td>6924</td>
+                                            <td>5845</td>
+                                            <td>5224</td>
+                                            <td>6817</td>
+                                            <td>8902</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Mauris.</th>
+                                            <td>0526</td>
+                                            <td>2547</td>
+                                            <td>2345</td>
+                                            <td>7525</td>
+                                            <td>Neque p</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Cras amet. </th>
+                                            <td>65782</td>
+                                            <td>234</td>
+                                            <td>8217</td>
+                                            <td>8832</td>
+                                            <td>9636</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Suspendisse sed dui. </th>
+                                            <td>Neque p</td>
+                                            <td>Neque p</td>
+                                            <td>7914</td>
+                                            <td>8652</td>
+                                            <td>Neque p</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Vivamus felis ex nec. </th>
+                                            <td>Neque p</td>
+                                            <td>Neque p</td>
+                                            <td>6582</td>
+                                            <td>1236</td>
+                                            <td>Neque p</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Nunc vivamus. </th>
+                                            <td>5367</td>
+                                            <td>123</td>
+                                            <td>9024</td>
+                                            <td>4832</td>
+                                            <td>0287</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Ex.</th>
+                                            <td>456</td>
+                                            <td>379</td>
+                                            <td>4239</td>
+                                            <td>7820</td>
+                                            <td>0236</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#d9">A healthy Diet Combination - Ratios</a>
+                        <div class="collapse" id="d9" data-parent="#accordionDiet">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec eget maximus turpis, quis dignissim ligula. In quis. </p>
+                                <ul>
+                                    <li>Nullam vel augue. </li>
+                                    <li>Vivamus rutrum quam. </li>
+                                    <li>Aenean nec nibh est. </li>
+                                    <li>Vivamus quis justo. </li>
+                                    <ul>
+                                        <li>Duis euismod ex ipsum, nec mattis lacus libero. </li>
+                                    </ul>
+                                </ul>
+                                <p>Sed posuere varius sem, nec vulputate nisl porttitor at. Phasellus tellus arcu, dictum id tempus interdum, cursus nec ante. Donec eget ante et lacus convallis tincidunt. Phasellus sed nibh semper, maximus nisi ac, malesuada nulla. Vivamus vestibulum magna nec libero tincidunt ullamcorper. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer congue vitae augue id biam. </p>
+                                <p>Nunc vestibulum sagittis metus, at porttitor est tristique nec. Duis dignissim, dolor mattis sollicitudin vulputate, felis augue fringilla elit, eu convallis laoreet. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#d10">Are you supplementing the dragons diet with calcium and vitamins?</a>
+                        <div class="collapse" id="d10" data-parent="#accordionDiet">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Donec ultricies nulla et tincidunt viverra. Duis lacus felis, pharetra sed ante nec, fringilla malesuada sem. Fusce ullamcorper purus lacinia sem laoreet suscipit. Duis ac lobortis nulla. Aliquam at blandit dolor, non mattis turpis. Integer sit amet orci pretium, placerat urna eu, blandit felis. Vivamus urna ante, molestie sed consequat ac, pulvinar sed nibh. Aenean a nisi et massa tristique luctus. Nam nulla odio, vehicula non faucibus vitae, dictum vitae nulla. Donec scelerisque tortor eget ullamcorper tincidunt. Mauris laoreet tristique nunc nec posuere. Integer vulputate et purus ac cursus. Nam neque nisl, convallis sed lacus vitae, tempor egestas tellus. Nullam mollis venenatis gravida. </p>
+                                <p>Integer egestas congue elit, id venenatis tortor venenatis sit amet. Praesent sit amet dui venenatis, pharetra dolor ut, porta risus. Phasellus ac fermentum dolor. Donec elementum, libero eu porttitor condimentum, sapien lectus laoreet tellus, eu iaculis nulla lectus mollis orci. Phasellus et placerat purus. Cras dapibus ipsum id rhoncus laoreet libero. </p>
+                                <p>Proin id faucibus libero. Morbi odio felis, feugiat vel luctus sit amet, finibus a erat. Nulla facilisi. Vivamus pulvinar interdum diam, eget malesuada purus malesuada vitae. In pulvinar enim condimentum mauris pellentesque dignissim. Sed blandit leo aenean. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#d11">Commercial Diets - NOT</a>
+                        <div class="collapse" id="d11" data-parent="#accordionDiet">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Nunc fringilla tempor nunc. Quisque convallis mauris vitae enim malesuada sollicitudin. Aenean sit amet magna nulla. In consequat dictum volutpat. Nulla scelerisque ipsum eu odio condimentum, sit amet aliquet nisi scelerisque. Cras viverra, justo ac tincidunt rhoncus, dui ante tempus dolor, eu tincidunt metus diam sit amet dolor. Donec sit amet pretium nisi, eu in. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#d12">How much to feed</a>
+                        <div class="collapse" id="d12" data-parent="#accordionDiet">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Quisque sem sapien, faucibus eu turpis vel, hendrerit posuere massa. Phasellus ut lacus sapien. Sed suscipit, eros accumsan luctus ultrices, neque sem ullamcorper dui, ut viverra elit nisi in neque. Donec sit amet rhoncus augue. Donec ut condimentum metus. Sed nulla turpis, rutrum vel finibus nec, blandit commodo mi. Aliquam sagittis sit amet libero a hendrerit. Mauris vitae faucibus purus. Suspendisse aliquam, ante in elementum iaculis, augue mauris fringilla purus, in sagittis velit dolor ac mi. Aliquam pulvinar mattis maximus. Nam vel enim et nulla rutrum suscipit. Mauris pharetra diam lectus, at luctus dui rutrum ac. Phasellus sem orci, facilisis ut rutrum eget, rutrum dui. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#d13">A word about Metabolic Bone Disease (calcium deficiency)</a>
+                        <div class="collapse" id="d13" data-parent="#accordionDiet">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Curabitur fermentum neque in feugiat convallis. Curabitur venenatis quam quis risus suscipit elementum. Sed sit amet tortor vel turpis pulvinar semper quis nec arcu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse accumsan purus commodo eros tincidunt gravida. Vivamus sed luctus ex. Vivamus rutrum, neque quis ligula. </p>
+                                <p>Donec condimentum lorem erat, et tempor nisi tincidunt nec. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum at vehicula turpis. Ut sit amet purus turpis. Integer ut leo diam. Maecenas non aliquam leo. Pellentesque ac lacinia felis. Quisque quis semper mi. Maecenas eu vehicula massa. In id lacus vitae lacus tempor consequat. Proin interdum ante ac ante congue pulvinar ut nec mauris. Duis porttitor interdum sem, eget elementum ipsum ultrices sed. Mauris vehicula, ante sed efficitur lacinia, risus turpis tempus orci, non efficitur leo augue nec dui. Donec suscipit, mi sit amet eleifend lacinia, ipsum dolor metus. </p>
+                                <p>Nulla blandit elit eu blandit lacinia. Etiam eget erat maximus, mattis tortor a, mollis quam. Curabitur in purus et dui cursus vehicula ac et mauris. Suspendisse eu enim in metus fringilla hendrerit et vitae purus. Maecenas commodo maximus tempor. Ut dictum ante et tortor vestibulum, eu semper orci ultricies. Donec sit amet nulla enim. Morbi volutpat, mauris non ultrices dictum, risus augue interdum nisl, rhoncus sagittis libero velit eu metus. Cras commodo neque efficitur ex ultricies pretium. Cras mattis mi eget suscipit blandit. Quisque consectetur ante et luctus venenatis. Cras id fringilla ex, non dapibus leo. Nullam fermentum mi ullamcorper, fringilla purus eu, eleifend diam. Nulla faucibus sapien eros, in ultrices ipsum malesuada eget. Phasellus est nulla, elementum eu dictum vitae, eleifend vitae sem. Sed pharetra, magna ac. </p>
+                                <p>Aenean eget lorem est. Nulla luctus dolor a lectus placerat, a tincidunt augue condimentum. Ut hendrerit a magna non vestibulum. Praesent risus arcu, iaculis sit amet metus eu, tempor viverra dolor. Mauris hendrerit augue non felis suscipit tincidunt. Quisque luctus dictum tristique. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque sed posuere nulla. Suspendisse a purus a ligula molestie viverra quis sit amet mi. Nulla dolor urna, blandit sed magna eget, auctor vulputate turpis. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#d14">General Rules about Feeding</a>
+                        <div class="collapse" id="d14" data-parent="#accordionDiet">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Nullam dignissim pretium nulla at consectetur. Phasellus vel turpis dictum odio feugiat placerat. Phasellus non tristique neque. Suspendisse placerat elit finibus odio faucibus auctor. Aliquam vitae ligula ut libero condimentum porttitor eu et tellus. Nunc neque ante, dapibus pretium sollicitudin aliquam, mattis non leo. Donec lobortis justo tempus orci sollicitudin, non sodales arcu venenatis. Proin tempus tellus eros, ut fringilla lorem dictum pretium. Nunc in ornare enim, eu molestie. </p>
+                                <p>Nulla dapibus porta ante. </p>
+                                <p>Praesent eu justo quam. Aliquam at est vitae quam ultricies gravida vel at mi. Aliquam at enim arcu. Cras elit tellus, finibus eu commodo a, suscipit et est. Phasellus dictum nunc nec euismod auctor. Aenean sit amet sem et nulla vestibulum vehicula. Pellentesque at sapien sem. Nullam sodales vestibulum purus vitae donec. </p>
+                                <p>Fusce fringilla euismod turpis, hendrerit vehicula velit venenatis id. Cras vehicula aliquam gravida. Vestibulum rutrum metus nec velit vulputate, ac varius ipsum congue. Ut congue pretium felis, sed blandit elit rhoncus non. Praesent et justo ut tortor ornare cursus nec id nisi. In ac iaculis ex. Praesent et consequat libero. In hac habitasse platea dictumst. Quisque maximus varius leo eget fringilla. Fusce quis orci vel mi lacinia finibus. Donec et lorem eget nunc elementum porta. Fusce a nunc et erat gravida semper non non dolor. Cras sit amet ipsum vulputate, semper risus at, commodo nibh. Ut sed venenatis orci. Nunc aliquam nibh in vestibulum eleifend. Etiam nec sapien posuere velit. </p>
+                                <p>Morbi a efficitur turpis. Phasellus vitae lacus laoreet, maximus ligula vehicula, porttitor nulla. Nullam a dignissim erat. Fusce mattis ligula vel elementum suscipit. Ut blandit tortor viverra neque tincidunt volutpat. Aliquam erat volutpat. Ut urna quam, varius quis nisi sit amet, commodo vulputate turpis. Donec vel maximus augue, et pellentesque ligula. Sed vel tellus at lorem hendrerit pretium. Donec congue dui sed purus vestibulum. </p>
+                                <p>Sed dignissim feugiat nibh, eu vulputate ligula viverra sit amet. Cras vel feugiat est. Integer volutpat scelerisque odio vel ullamcorper. Donec commodo tortor quam, eu fermentum ex bibendum at. Integer consectetur mi eget justo euismod, at vulputate libero vel. </p>
+                                <p>Sed euismod, tortor dictum semper lacinia, arcu sem facilisis urna, sed pellentesque purus ligula eget sem. Vestibulum sollicitudin, nulla nec feugiat sollicitudin, sapien mi bibendum leo, nec efficitur augue metus a velit. Aliquam eu dolor ipsum. Donec bibendum ex vel metus euismod scelerisque et non mi. Nam quis urna rutrum, dignissim eros sit in. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#d15">An example of what mine eat</a>
+                        <div class="collapse" id="d15" data-parent="#accordionDiet">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Donec posuere erat felis aenean. </p>
+                                <ul>
+                                    <li>Proin orci massa, sollicitudin ac orci quis, maximus sodales mi. Donec sed commodo sem. Nulla biam. </li>
+                                    <li>Cras nec mauris id justo consequat interdum in eget ligula. Quisque felis ipsum placerat. </li>
+                                    <li>Curabitur dictum purus sed tristique suscipit. Class aptent taciti sociosqu ad litora viverra. </li>
+                                    <li>Donec pretium mollis fermentum. Curabitur lacinia lorem tellus, sed convallis erat fermentum eu. </li>
+                                </ul>
+                                <p>Phasellus placerat nisl non nulla accumsan faucibus. Cras pellentesque lectus ac nunc feugiat vestibulum at ut leo. Fusce consequat dictum odio nec luctus. Proin ullamcorper nulla ac cras. </p>
+                                <p>Quisque vitae pharetra sem. Curabitur efficitur commodo ullamcorper. Proin id risus porttitor, feugiat neque a, faucibus mi. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 px-0 imgRPos d-none d-md-block">
+                <img src="img/navBrand.jpg" alt="Water dragon picture" class="img-fluid imgRounded shadow"/>
+            </div>
+        </div>
+
+        <div class="row mx-2 mx-md-4 mt-4 align-items-center">
+            <div class="col-md-3 px-0 imgLPos d-none d-md-block">
+                <img src="img/navBrand.jpg" alt="Water dragon picture" class="img-fluid imgRounded shadow"/>
+            </div>
+            <div id="accordionAilments" class="col-md-9 shadow px-1 px-md-5 pb-5 cardStyle">
+                <h3 id="linkAilments" class="h3Title text-center py-4">Ailments</h3>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#a1">Internal Parasites</a>
+                        <div class="collapse" id="a1" data-parent="#accordionAilments">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Donec odio lectus, congue semper nisi nec, ultrices hendrerit lectus. Donec consectetur massa at quam tempus, nec elementum lacus tempor. Morbi nec vulputate enim. Donec non sapien aliquam. </p>
+                                <p>Maecenas ac molestie elit. Ut suscipit ipsum nulla. Praesent eu magna feugiat, congue felis sit amet, scelerisque lacus. Integer congue mollis lacus, nec molestie turpis efficitur id. Nullam laoreet tellus erat, eget mattis felis volutpat in. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin ultrices odio et lacus ornare euismod at ac neque. Integer euismod turpis ac finibus odio. </p>
+                                <p>Morbi elementum dui in ipsum condimentum eleifend. Nullam non laoreet elit. Aliquam non mi. </p>
+                                <p>Proin convallis maximus ultricies. Praesent eget neque a orci tempor tempor. In cursus sapien enim, vitae finibus mauris semper et. Morbi congue a est ut hendrerit. Mauris magna urna, pharetra id molestie id, rutrum a augue. Morbi ultricies, nunc sit amet congue condimentum, nulla purus placerat tortor augue. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#a2"> Metabolic Bone Disease (Hypocalcemia or hypercalcemia) </a>
+                        <div class="collapse" id="a2" data-parent="#accordionAilments">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Maecenas lobortis ultricies massa nec maximus. In ullamcorper, mi eget molestie vestibulum, nisl mauris tempor augue, nec tempor diam nunc vel risus. Morbi aliquam vel felis in rutrum. Ut vel dui ut eros luctus luctus in dapibus dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec vehicula neque eu accumsan semper. Donec tincidunt pretium scelerisque. Nulla eget nisi quis leo scelerisque aliquet. Sed eleifend, orci posuere suscipit lobortis, dui nunc gravida ante, quis eleifend justo leo non tellus. Pellentesque sapien sem, imperdiet sed tellus consectetur, auctor pulvinar tortor. Nam sed volutpat metus. Sed nec neque diam. Sed congue auctor sodales. Duis quis efficitur metus, non consequat eros. Aliquam erat volutpat. In biam. </p>
+                                <p>Nam efficitur maximus orci ut fermentum. Vestibulum blandit faucibus metus eget cursus. Morbi dignissim ut eros sit amet imperdiet. Vivamus ut nulla justo. Proin mi dui, dignissim ac nunc at, facilisis egestas urna. Donec est eros gravida. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#a3">Rostral/Snout Damage</a>
+                        <div class="collapse" id="a3" data-parent="#accordionAilments">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Maecenas sit amet interdum tellus. Nam consequat dictum dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse id scelerisque enim, vitae volutpat massa. Duis in aliquet lorem. Fusce eget imperdiet risus. Proin et elit ex. Praesent eleifend lorem a ipsum porta placerat. Cras vehicula, diam quis molestie dapibus, dui quam viverra erat, sed sollicitudin tortor ipsum nec lorem. Duis vel euismod lacus. Nulla facilisi. Vivamus at ex molestie, interdum dui a, convallis nisl. Mauris eget ligula ipsum. Duis in risus placerat, cursus ipsum at, sollicitudin ante. Maecenas lectus eros, mollis in porttitor ac, tincidunt et mi. </p>
+                                <p>Vivamus semper sem vitae lorem laoreet, ut dignissim dolor facilisis. Vestibulum egestas leo in tortor aliquam condimentum. Pellentesque vel velit orci. Vivamus ac auctor nunc, nec massa nunc. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#a4">Stomatitis (Mouthrot)</a>
+                        <div class="collapse" id="a4" data-parent="#accordionAilments">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Proin at felis pretium, placerat odio vel, laoreet augue. Vivamus a mollis lectus. Suspendisse varius laoreet interdum. Nunc eros sapien, vestibulum ut neque eu, laoreet pulvinar tortor. In nec ipsum molestie, commodo dui eu, porta lacus. Proin tempor elit tincidunt, semper lectus eget cras amet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#a5">Swollen/Infected Limbs</a>
+                        <div class="collapse" id="a5" data-parent="#accordionAilments">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Phasellus vulputate ac ligula sit amet accumsan. In at finibus enim. Nullam lobortis arcu quis ipsum tincidunt malesuada. Mauris viverra leo. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#a6">Articular/Periarticular/Pseudo Gout</a>
+                        <div class="collapse" id="a6" data-parent="#accordionAilments">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Quisque malesuada elit in pellentesque blandit. Integer lobortis viverra pellentesque. Aenean rhoncus, tortor at tristique porta, ex justo blandit ex. </p>
+                                <p>Pellentesque molestie ornare pellentesque. Nunc aliquet dignissim porta. Mauris vel metus sagittis, maximus ipsum pellentesque, rhoncus nulla. Nam non molestie nibh. Duis faucibus diam non neque suscipit, et consectetur tortor iaculis. Aliquam ante massa, blandit vitae porta in, eleifend et leo. In elementum consequat molestie eros. </p>
+                                <p>Pellentesque a dignissim sapien. Praesent finibus in ex id efficitur. Sed eget pretium leo. Fusce sagittis elit nec varius facilisis. Suspendisse euismod quam et augue tristique aliquam. Phasellus sit amet velit quis nunc facilisis dapibus. Aenean eleifend. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#a7">Gastroenteritis</a>
+                        <div class="collapse" id="a7" data-parent="#accordionAilments">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Proin sit amet ultricies leo. Aenean luctus facilisis risus ut molestie. Nulla euismod finibus metus eget sollicitudin. Proin nec ligula ullamcorper velit bibendum mattis sed sed augue. In posuere congue sapien a elementum. Fusce congue imperdiet nibh, vel imperdiet eros. Aliquam mattis justo ut mi dictum, non dapibus ipsum viverra. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#a8">Respiratory Infection</a>
+                        <div class="collapse" id="a8" data-parent="#accordionAilments">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Cras quis urna a nulla scelerisque lacinia eu ut magna. Vestibulum vehicula libero eget varius rutrum. Suspendisse semper faucibus lacus, in viverra lectus porttitor ac. Donec auctor massa vel tellus vestibulum, quis laoreet ex facilisis. Vivamus elementum porta fringilla. In hac habitasse platea dictumst. Nulla ut justo sollicitudin lectus gravida rutrum. Ut elit elit, fermentum at urna at, fermentum finibus dolor. Integer gravida efficitur lorem, at imperdiet augue aliquet sed. Donec non metus tempor tortor blandit faucibus. Suspendisse ut est lorem. Sed pretium dapibus est, eget tincidunt nunc. Quisque fringilla felis dictum luctus efficitur. Nulla augue leo, mollis at turpis nec orci aliquam. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#a9">Egg Binding-Dystocia</a>
+                        <div class="collapse" id="a9" data-parent="#accordionAilments">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Aenean faucibus, dui sed congue placerat, urna ligula tempor augue, id interdum velit orci ut ante. Quisque sagittis sagittis porta. Suspendisse pellentesque, dolor eget ullamcorper malesuada, odio purus placerat augue, eu tristique neque risus sed nisi. In suscipit ullamcorper sapien vel porttitor. Integer nibh libero, pretium et tortor sed, suscipit facilisis nisl. Sed lobortis quam vel turpis faucibus, ac lobortis purus fringilla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam iaculis mi sit amet neque rhoncus quam. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#a10">Mite and Tick infestation</a>
+                        <div class="collapse" id="a10" data-parent="#accordionAilments">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Ut massa nulla, posuere eu condimentum sit amet, accumsan ut felis. Aenean vehicula pharetra ligula eget pellentesque. Nam fermentum turpis id orci dapibus, dapibus placerat ante sollicitudin. Suspendisse velit ex, condimentum et nisi eu, euismod efficitur mauris. Pellentesque tristique felis eu sem convallis dictum. Etiam ac purus semper, pharetra est in, pulvinar purus. Praesent sed nunc ac tortor commodo convallis id eu tortor. Duis auctor risus non justo mattis vehicula. Sed at lacus sed mi rutrum ultricies. Quisque tortor ex, convallis et risus quis, euismod venenatis magna. Pellentesque sollicitudin, ex ut convallis hendrerit, ex nunc feugiat nibh, vel molestie orci dolor vel odio. Maecenas porta ante. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#a11">Fungal or bacterial infections</a>
+                        <div class="collapse" id="a11" data-parent="#accordionAilments">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Maecenas rutrum lorem sit amet feugiat euismod. Etiam nisl nunc, pellentesque id mi vitae, pharetra fermentum velit. Vestibulum lacinia diam nec tortor egestas gravida. Morbi eu scelerisque mauris. Pellentesque ipsum ante, pulvinar sed gravida nec, consequat nec ipsum. Aliquam sit amet pulvinar metus. Cras eleifend. </p>
+                                <p>Duis ac blandit nulla, eget vehicula nibh. Sed pharetra accumsan nibh, ut rutrum nisi tincidunt sed. Sed erat lorem, tincidunt sit amet lectus sed, fringilla convallis felis. Nunc massa nisl, venenatis nec tortor vitae, semper malesuada lorem. Fusce gravida nibh lectus. Aenean a neque arcu. Proin in interdum metus. Nulla sagittis nec risus pulvinar laoreet. Phasellus ac lacus nec sapien congue sollicitudin. Fusce at porta erat. Quisque gravida dictum vestibulum. Sed eleifend hendrerit magna, sed consequat lacus erat curae. </p>
+                                <p>Quisque sit amet enim tellus. Donec id ornare nibh, quis commodo sapien. Vestibulum vitae arcu sit amet quam laoreet varius eu eu odio. Morbi volutpat tincidunt mattis. Vivamus euismod cursus mi, in congue metus viverra nec. Nullam commodo imperdiet risus scelerisque ornare. Ut aliquam laoreet sapien ut ornare. Nullam sed sapien purus. Class aptent taciti sociosqu ad litora torquent nunc. </p>
+                                <p>Integer id tellus sit amet dui placerat viverra ac nec orci. Morbi ut metus dolor. Ut mollis leo at pharetra ornare. Mauris eget augue posuere, consequat purus quis, sollicitudin erat. Mauris vitae rhoncus nulla, ullamcorper tempus nunc. Etiam bibendum varius ipsum, quis imperdiet odio facilisis ut. Aliquam tempor ligula sit amet sapien laoreet tempor. Pellentesque pulvinar elit et ligula malesuada, at vulputate diam elementum. Duis luctus urna nec felis tincidunt, eget malesuada massa faucibus. Vivamus ultricies dolor porttitor turpis mollis ullamcorper. Pellentesque porta odio sit amet faucibus maximus. Integer ut ex metus. Fusce quis urna in justo tempus condimentum. Sed eros magna, feugiat tincidunt nibh at, pharetra pellentesque turpis. Proin rhoncus risus ante, sed egestas mauris tristique proin. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#a12">Toe, Spike or end of tail damage and loss</a>
+                        <div class="collapse" id="a12" data-parent="#accordionAilments">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Donec a purus eu lectus egestas pulvinar. Fusce imperdiet pharetra elit, a laoreet nisl. Sed in faucibus purus, accumsan ac. </p>
+                                <p>enean porttitor arcu a sagittis tincidunt. Donec non eros purus. Nunc sollicitudin sagittis risus, sit amet euismod quam posuere aliquam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent in convallis metus, non euismod tortor. Sed quis arcu ultrices, rutrum lectus in, commodo ac. </p>
+                                <p>Phasellus laoreet turpis sit amet vestibulum cursus. Vivamus non tortor eu tellus fringilla tincidunt sit amet vitae odio. Sed vitae mollis eros, non porttitor urna. Quisque justo ex, ultrices a posuere eu, tincidunt quis magna. Donec magna quam, condimentum id eleifend at, convallis id dui. Fusce eu tristique eros. Phasellus at ligula laoreet, viverra cras. </p>
+                                <p>Vestibulum imperdiet velit in magna consectetur facilisis. Integer lacinia quam nec arcu eleifend sollicitudin. Curabitur dictum massa id luctus egestas. In eget volutpat eros. Mauris ut quam quis sapien commodo mattis non sit amet est. Vestibulum pellentesque, mauris ut ornare ultrices, ante ligula dignissim sapien, ut imperdiet quam quam in est. Donec interdum eget ante nec pharetra. Fusce vel purus auctor ligula tempus tincidunt. Aliquam erat volutpat. Phasellus hendrerit quis felis ut fringilla. Nunc quis. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row align-items-center mx-2 mx-md-4 mt-4">
+            <div id="accordionBreeding" class="col-md-9 shadow px-1 px-md-5 pb-5 cardStyle">
+                <h3 id="linkBreeding" class="h3Title text-center py-4">Breeding</h3>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#b1">Preparation</a>
+                        <div class="collapse" id="b1" data-parent="#accordionBreeding">
+                            <div class="card-body px-2 px-md-3">
+                                <p>In a erat sit amet eros pulvinar mattis in in ex. Nulla commodo feugiat neque, et ultrices justo tempor eu. Pellentesque eget urna tristique, feugiat libero vitae, gravida turpis. Sed ac nunc purus. Nunc dui ante, laoreet vitae urna fringilla morbi. </p>
+                                <p>Sed euismod tortor turpis, ac aliquet massa consectetur sit amet. Phasellus ut ligula purus. Aliquam eleifend lectus ut gravida ornare. Morbi ultricies in turpis eu dictum. Nunc eget lorem quis massa facilisis pharetra. Phasellus ut risus pretium, ornare nunc vitae, rutrum felis. Donec auctor a nunc non vulputate. Mauris ornare orci. </p>
+                                <p>Donec semper vitae lacus in venenatis. Duis ullamcorper dolor ut leo iaculis, volutpat gravida urna posuere. Duis gravida, nisl vitae sodales sed. </p>
+                                <p>Nulla vitae magna at dolor gravida aliquam et eu neque. Suspendisse accumsan non est quis feugiat. Duis in urna dolor. Curabitur sed lobortis magna, quis hendrerit neque odio. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#b2">Hibernation</a>
+                        <div class="collapse" id="b2" data-parent="#accordionBreeding">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Sed pharetra ante non nulla imperdiet condimentum vel non diam. Pellentesque et tellus felis. Sed mollis vitae massa in tempus. Nullam id euismod libero, ac fermentum nibh. Integer vitae ipsum euismod, tincidunt urna ac, faucibus lorem. Sed auctor leo sodales neque semper gravida. In quis dui ut massa aliquet ullamcorper. Nullam tempus orci quis neque posuere, vitae blandit odio sollicitudin. In hac habitasse platea dictumst. Vivamus aliquam imperdiet nibh vel facilisis. Phasellus posuere urna eu tortor scelerisque sodales. Vivamus at sagittis ipsum dui. </p>
+                                <p>Mauris tempor facilisis cursus. Maecenas nec accumsan nisi. Phasellus euismod augue sed convallis sodales. Donec ut lectus sit amet lorem pulvinar vehicula vitae sit amet nibh. Nullam massa dui, luctus non lectus et, dignissim posuere dui. Etiam ullamcorper varius neque eget semper. Morbi mollis consectetur sem vel mauris. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#b3">Mating Behaviour</a>
+                        <div class="collapse" id="b3" data-parent="#accordionBreeding">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Nunc tincidunt libero diam, non rhoncus sapien volutpat in. Nullam aliquet, purus vitae sodales sed. </p>
+                                <p>Etiam neque urna, tempor id dolor eu, fermentum mollis nulla. Pellentesque a neque eu orci vulputate porta vel sit amet velit. Morbi feugiat, sem sed tristique efficitur, dui purus sodales leo, vitae scelerisque massa lorem vel. </p>
+                                <p>Cras tempus cursus mauris, at ultrices nulla ultrices sit amet. Fusce ullamcorper in ipsum a pellentesque. Etiam sed eleifend neque. Quisque vel lacinia posuere. </p>
+                                <p>Maecenas eget hendrerit libero. Suspendisse viverra mollis ex, eu scelerisque nisl. Nam egestas, arcu et mattis porttitor, eros odio tempus leo, aliquet congue est diam non nisl. Suspendisse nec justo eu ante malesuada rutrum. Morbi elementum mollis nunc, eu posuere libero eros. </p>
+                                <p>Maecenas mi velit, dignissim in augue eget, interdum euismod ex. Cras ullamcorper sapien id leo egestas, ut molestie sem hendrerit. Phasellus id lorem diam. Vivamus blandit eros ac eros tincidunt, in laoreet ligula pharetra. Mauris quis leo turpis. Vivamus vitae accumsan felis. Etiam quis enim id lacus mollis pellentesque et quis neque. Nulla blandit ut ante non consectetur. Donec lobortis ac eros et molestie. Vestibulum nulla ex, congue ac vehicula at, tristique non eros. Donec condimentum lectus nec egestas porta. Morbi ut. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#b4">The gravid dragon</a>
+                        <div class="collapse" id="b4" data-parent="#accordionBreeding">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Etiam a porta massa, id dignissim justo. Nullam id cursus sem. Etiam rutrum nulla metus, non dictum magna egestas quis. Mauris quis molestie risus, quis sollicitudin est. Lorem ipsum dolor sit amet, consectetur adipiscing elit vivamus. </p>
+                                <p>Nam eleifend malesuada turpis, ut elementum quam pretium eget. Vestibulum sit amet ante tincidunt erat tincidunt ullamcorper. Ut venenatis sodales leo, eu lobortis justo sodales et. Nullam non vulputate sem. Vestibulum maximus, sem id viverra pulvinar, sapien lorem mollis justo, id venenatis leo tellus a ex. Sed in nunc ut risus cursus accumsan ut ac. </p>
+                                <p>Nam ligula ipsum, mattis quis blandit in, scelerisque sit amet ipsum. Cras sed massa sed lacus tempus cursus sed id nulla. Duis commodo fringilla enim at convallis. Fusce ligula massa, sollicitudin eu facilisis id, vulputate vel purus. Maecenas euismod eros quis ex dignissim, at ultrices elit tincidunt. Proin hendrerit velit a tortor tincidunt convallis. Nam faucibus dignissim enim. In gravida erat eros, non pulvinar purus sagittis in. Sed tempor velit nec libero hendrerit, sed condimentum libero interdum. Nunc mattis in dolor non feugiat. Nulla nam. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#b5">Egg Laying</a>
+                        <div class="collapse" id="b5" data-parent="#accordionBreeding">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Maecenas facilisis vitae diam vitae semper. Vivamus ac molestie elit. Mauris a quam purus. Quisque eget neque egestas, cursus nibh id, vehicula erat. Morbi facilisis ligula et placerat auctor. Nam ac dui libero. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse potenti. Fusce sed tincidunt tellus. Curabitur eget metus nec turpis sagittis tincidunt sed sit amet aliquam. </p>
+                                <p>Phasellus dignissim tortor eget mi posuere, eu cursus sem pellentesque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque mollis hendrerit dolor, aliquam rhoncus ligula suscipit ac. Duis tincidunt orci vel lacus condimentum tincidunt. Praesent quis sapien et dui porttitor luctus. Cras at erat felis. Sed volutpat, justo in auctor tempus, orci felis efficitur arcu, vel vehicula tortor lacus nec tellus. Etiam volutpat sapien eget massa ullamcorper, in viverra tellus mattis. Praesent porttitor tortor sapien, ut dapibus dui vulputate et. Integer in ante placerat, pretium felis porttitor, congue arcu. Curabitur in tempor sem. Maecenas vulputate risus ac euismod pellentesque. Donec aliquet aliquam massa sit amet tincidunt. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#b6">Incubation</a>
+                        <div class="collapse" id="b6" data-parent="#accordionBreeding">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Proin mollis sollicitudin quam at tincidunt. Fusce id maximus nulla. Vestibulum massa ante, posuere eget semper orci. </p>
+                                <p>Proin sit amet enim neque. Duis nec justo est. Nam id quam a nisl ultrices faucibus. Nulla massa risus, luctus pretium erat ut, egestas porta purus. Nunc enim elit, vestibulum vitae laoreet et, tincidunt nec justo. Donec dignissim congue aliquet. Proin tincidunt dui eget feugiat egestas. In porttitor magna nec nibh lobortis bibendum. Praesent id interdum diam, eu hendrerit lectus. Nulla magna est, euismod in vulputate id, dapibus at ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc auctor sem lacus, eget consequat felis iaculis a. In a lacus ultrices augue pellentesque placerat. Integer ut. </p>
+                                <p>Morbi vitae luctus mi. Nulla eget justo eros. In nunc lorem, placerat non commodo ac, viverra molestie justo. Praesent sed diam rutrum nisi pretium eleifend in non leo. Donec congue, sem in bibendum elementum, ante odio porttitor diam, in pellentesque nulla neque quis arcu. Nulla dictum ultrices rhoncus. Nunc imperdiet lorem iaculis justo pulvinar, ultrices semper lacus ultrices. Proin et mauris non justo rutrum vehicula vitae at erat. Nullam ut egestas lorem, id faucibus velit. Nam aliquam sodales diam consectetur finibus. Nam at magna et massa dapibus dictum. Nunc dictum at proin. </p>
+                                <p>Nunc id finibus libero. Ut maximus purus eros, et commodo lacus cursus ac. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent pulvinar posuere orci nec vehicula. Sed lobortis nisi sem, sit amet dignissim sem varius sit amet. Ut placerat laoreet magna ac rhoncus. Quisque lectus dui, volutpat ac pharetra eu, pellentesque vitae eros. Cras libero leo, lacinia non dapibus tincidunt, pellentesque vitae felis. Duis laoreet vitae metus eu posuere. Donec mattis massa mattis, ullamcorper nulla quis, consectetur est. Phasellus a augue sed odio tristique congue at vel justo. Praesent rhoncus, nibh eu sollicitudin dictum, orci leo sodales erat, a mollis mi velit sit amet erat. Vivamus rutrum sit amet nulla ullamcorper volutpat. Phasellus sit amet massa rutrum, congue dui vitae, dictum tortor. Ut eget lorem mattis, blandit libero augue. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#b7">Care of Hatchlings</a>
+                        <div class="collapse" id="b7" data-parent="#accordionBreeding">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Nullam vel diam consequat, cursus mauris vel, euismod mi. Mauris vel congue augue. Fusce turpis mauris, euismod eu congue ac, rutrum et ex. Sed volutpat maximus eros, ut maximus justo tempus eu. Praesent eu eleifend quam. Nam finibus arcu tempus metus posuere sagittis. Donec quis odio ipsum quis. </p>
+                                <p>Nunc pretium, eros vitae malesuada ornare, odio dolor dapibus sapien, a malesuada nisl justo in sem. Vivamus malesuada egestas erat, nec ornare tellus efficitur eget. Nam non eros id risus condimentum tristique. Vivamus pretium nam. </p>
+                                <p>Nulla eget lacus fermentum, placerat magna vitae, aliquam lectus. Etiam faucibus blandit scelerisque. Phasellus dapibus varius metus, sed accumsan mauris maximus eu. Donec euismod tempus erat, eu fermentum libero fringilla id. Quisque mollis metus in eros blandit feugiat. Vivamus dolor vivamus. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 px-0 imgRPos d-none d-md-block">
+                <img src="img/navBrand.jpg" alt="Water dragon picture" class="img-fluid imgRounded shadow"/>
+            </div>
+        </div>
+
+        <div class="row mx-2 mx-md-4 mt-4 align-items-center">
+            <div class="col-md-3 px-0 imgLPos d-none d-md-block">
+                <img src="img/navBrand.jpg" alt="Water dragon picture" class="img-fluid imgRounded shadow"/>
+            </div>
+            <div id="accordionBehavior" class="col-md-9 shadow px-1 px-md-5 pb-5 cardStyle">
+                <h3 id="linkBehavior" class="h3Title text-center py-4">Behavior</h3>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#bh1">Behaviour, Taming and Handling of Chinese Water Dragons</a>
+                        <div class="collapse" id="bh1" data-parent="#accordionBehavior">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Quisque in felis ut justo elementum malesuada. Quisque dapibus orci ut tortor faucibus, vitae sollicitudin arcu vulputate. Proin sapien augue, viverra nec elementum ac, faucibus sit amet lacus. Morbi finibus, lectus non volutpat volutpat, elit purus tempor odio, non pellentesque odio mauris ut magna. Mauris consequat placerat dolor quis vestibulum. Vestibulum tincidunt enim a ligula egestas commodo. Vestibulum sit mauris. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#bh2">Personality- Are Water Dragons Aggressive?</a>
+                        <div class="collapse" id="bh2" data-parent="#accordionBehavior">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Quisque in felis ut justo elementum malesuada. Quisque dapibus orci ut tortor faucibus, vitae sollicitudin arcu vulputate. Proin sapien augue, viverra nec elementum ac, faucibus sit amet lacus. Morbi finibus, lectus non volutpat volutpat, elit purus tempor odio, non pellentesque odio mauris ut magna. Mauris consequat placerat dolor quis vestibulum. Vestibulum tincidunt enim a ligula egestas commodo. Vestibulum sit mauris. </p>
+                                <p>Cras imperdiet tempor nunc, sit amet mattis tellus molestie a. Phasellus mi neque, bibendum vestibulum venenatis sed, ultrices vel dui. Vivamus id odio at tortor efficitur rutrum lobortis at lectus. Quisque nec neque id enim tempor ornare eu in nisl. Proin nunc magna gravida. </p>
+                                <p>Quisque vestibulum massa accumsan, aliquam mi euismod, varius tellus. Mauris ornare lorem sapien, ac accumsan orci ultricies ac. Suspendisse sit amet pharetra tortor, auctor ultrices risus. Mauris facilisis rhoncus diam, vel tincidunt lacus semper quis. Morbi pellentesque, nunc nec commodo laoreet, felis sem elementum felis, nec laoreet enim purus a risus. Aliquam sagittis in orci eu bibendum. Duis quis sem nibh. Aliquam et laoreet ex, eu vulputate erat. Nunc elementum justo in nulla ultrices, sed consequat dui tempus. Proin mollis elit non sapien placerat, et imperdiet lorem ultricies. Sed bibendum mi ut efficitur auctor. Proin in ligula ante. Praesent blandit quam non arcu interdum egestas. Aenean venenatis tempus vestibulum. </p>
+                                <p>Quisque eu consectetur lorem, sed sollicitudin purus. Suspendisse tincidunt metus eros, non tincidunt sapien rutrum ut. Duis nec diam massa. Donec blandit, metus non convallis eleifend, risus turpis consectetur mi, ut ultrices erat libero in nibh. Quisque vel pretium nulla, nec dictum neque. Ut in neque quam. Ut at consectetur ante. Nulla a nisi non mauris pretium congue sed vehicula odio. In tincidunt quam ut enim dapibus tristique. Quisque ultricies vehicula nisi et tempor. Integer sit amet lacinia tellus. Suspendisse quis odio accumsan, blandit diam ac, gravida eros. Mauris aliquam aliquam tincidunt. Maecenas at tempor leo. Integer vitae duis. </p>
+                                <p>Mauris lobortis, nunc vel viverra finibus, erat nulla commodo eros, at varius elit ante sed velit. Duis tempus a enim a mollis. Fusce egestas nisi in felis ullamcorper, vitae accumsan ante vulputate. Nullam ut auctor arcu. Quisque lobortis tortor sit amet nulla dapibus, vel iaculis sem faucibus. Integer pellentesque nunc risus, sit amet porta arcu mattis in. Fusce non dolor porta, hendrerit libero in. </p>
+                                <p>Maecenas egestas ultrices rutrum. Quisque vitae luctus lacus, in tristique ipsum. Nulla tortor massa, facilisis sed gravida at, consectetur ut neque. Maecenas sagittis lectus eget risus venenatis commodo. Praesent pharetra erat nec arcu molestie, quis vulputate massa posuere. Pellentesque pellentesque, libero ut condimentum iaculis, est erat bibendum libero, in gravida leo orci sit amet mauris. Duis semper est non dolor aliquam, eget tempor nisl suscipit. Maecenas non lectus malesuada, commodo magna in, suscipit arcu. Curabitur a placerat tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras ornare convallis volutpat. Integer posuere ligula arcu, eu faucibus nunc ultrices vitae. Cras lacinia tincidunt commodo. Fusce egestas, dolor ac ultrices consequat, nunc est hendrerit eu. </p>
+                                <p>Sed consequat, magna a ornare efficitur, eros neque volutpat sapien, vulputate ornare ipsum sapien vitae erat. Sed id venenatis mi. Maecenas varius urna leo, nec tristique ipsum ultrices id. Aenean vitae nunc sed turpis convallis porttitor. Suspendisse quis diam tincidunt, dapibus quam sed, scelerisque mi. Suspendisse vitae egestas orci. Vestibulum at diam magna. Aenean tempor augue nec dui eleifend, in cursus tellus efficitur accumsan. </p>
+                                <p>Nam suscipit ullamcorper odio nec sagittis. Proin pulvinar consectetur porta. Nullam quis est felis. Nullam in nisl id ipsum bibendum pulvinar. Etiam eleifend mi dolor, id pulvinar tortor pulvinar vel. Curabitur pellentesque fringilla dolor eu bibendum vivamus. </p>
+                                <p>Aenean auctor volutpat mi, id cursus lacus porttitor id. Nulla dapibus aliquam nunc nec efficitur. Aenean porttitor porta pellentesque. Integer enim diam, finibus sit amet ornare sollicitudin, lobortis sed arcu. Suspendisse lacus ligula, volutpat ac laoreet quis, rutrum in libero. Quisque luctus sodales maximus. Vestibulum ac risus nec tellus aliquam molestie. Quisque tellus nisl, viverra id enim et, vestibulum ullamcorper est. Pellentesque lobortis sollicitudin leo, id egestas augue lobortis sit amet. Duis venenatis suscipit ex id aliquam. Aenean sit amet volutpat ante. Quisque sit amet tincidunt lacus, id congue nibh. Suspendisse non magna mi orci aliquam. </p>
+                                <p>Morbi lorem enim, interdum in maximus vel, posuere ornare eros. Phasellus at tortor eu sapien lacinia pellentesque sed sed dolor. Ut tincidunt a mi et varius. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas molestie sapien id. </p>
+                                <p>Nulla in lectus sed neque gravida posuere elementum ut orci. Praesent volutpat lorem a viverra. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#bh3">Taming your new Water Dragon</a>
+                        <div class="collapse" id="bh3" data-parent="#accordionBehavior">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Morbi purus enim, faucibus vitae odio. </p>
+                                <p>Integer varius quam nec placerat mollis. Nulla accumsan placerat pulvinar. Aliquam facilisis enim augue, eu mollis massa condimentum ac. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam a ultricies sapien, nec luctus urna. Suspendisse potenti. Fusce efficitur elit ut lacus ultricies accumsan. Curabitur rutrum fermentum vestibulum. Quisque lacinia tempor semper. Ut eget aliquam metus. Pellentesque tempor tempor erat, vitae blandit turpis accumsan sed. Aliquam sed dapibus arcu. Pellentesque sollicitudin lobortis enim, imperdiet mattis mauris. Fusce vitae laoreet arcu. Sed sit amet nisl suscipit, posuere velit eget, congue lacus. Curabitur aliquam justo vel egestas sollicitudin. Nunc vitae enim risus. Duis imperdiet est ac vestibulum interdum. Nam velit ligula, accumsan et massa sed, fringilla bibendum neque. Donec leo est, posuere et cras. </p>
+                                <p>Nullam varius diam id mauris ullamcorper condimentum. Aliquam et urna sodales, ultricies leo ut, consequat eros. Nam ut tempor tortor. Nulla ac sapien libero. Sed sollicitudin interdum est, eu vulputate lorem. Nulla nisl magna, venenatis in orci ac, tincidunt elementum massa. Vivamus nec nulla. </p>
+                                <p>Aenean iaculis arcu ut turpis tristique eleifend. Pellentesque gravida convallis velit, a vulputate ex tempor dignissim. Aliquam erat volutpat. Aliquam pretium purus suscipit ex blandit, hendrerit consequat libero lacinia. Ut ut luctus nisl, in consequat mauris. Sed luctus, risus pretium accumsan scelerisque, nulla nulla volutpat enim, tempor pellentesque felis odio ac tellus. Duis sed risus viverra, porta odio ac, convallis pharetra. </p>
+                                <p>Ut pretium tempus felis, ut ullamcorper sapien euismod sed. Ut aliquet at risus at gravida. Nunc bibendum, nulla non varius suscipit, orci nulla accumsan metus, eget auctor felis nibh eu dolor. Maecenas vitae ligula eget mi iaculis imperdiet ut quis augue. Praesent accumsan elit erat, non molestie ligula tristique id. Praesent viverra ut diam vitae accumsan. Quisque interdum purus turpis, nec tristique mauris eleifend sed. Aliquam erat volutpat. In sit amet feugiat elit. Praesent iaculis elementum magna, sed tristique dolor fringilla a. Proin id proin. </p>
+                                <p>Morbi euismod porta mi. Praesent ut velit ex. Vivamus nec finibus risus, eget euismod odio. Donec vel orci sed ante eleifend porttitor. In ac lacus a ipsum elementum pellentesque. Vivamus pretium libero non egestas semper. Aliquam non ex in magna ornare molestie ac eget mauris. Nam non ultricies lacus, vitae viverra sapien. Quisque ornare urna sapien, quis dictum est pellentesque et. Curabitur rutrum sed libero ac ullamcorper. Vestibulum porttitor hendrerit blandit. Nullam dignissim sodales odio, eget mattis velit volutpat eget. Curabitur finibus ante ut neque feugiat malesuada. Aliquam a dui sed orci aliquet malesuada. Donec non massa posuere eros pretium scelerisque quis ac enim. Integer egestas est urna, sit amet vulputate massa mattis eu. Suspendisse non purus dignissim, placerat nisl ut, porttitor elit. Ut interdum vitae nisi vel fermentum. Nunc imperdiet ultricies nunc vitae dictum. Quisque nec porttitor ex, semper semper tellus. Nam viverra, elit a placerat pulvinar, libero orci pellentesque neque, in molestie tortor metus auctor metus. Pellentesque in volutpat orci. Aliquam dignissim, eros et placerat proin. </p>
+                                <p>Donec ac lacinia velit. Morbi ut odio aliquam erat vulputate laoreet. Cras non eros vel est suscipit ultrices. Suspendisse placerat consequat ipsum, ac hendrerit odio finibus eget. Morbi fringilla ante id elementum rhoncus. Cras sit amet ex interdum, ultricies sem quis, auctor mi. Aliquam at posuere risus, vel bibendum enim. Pellentesque vestibulum eu nibh sed iaculis. Curabitur vitae aliquet augue. Suspendisse sed iaculis felis, eget egestas odio. Nam facilisis ligula non diam semper, ac aliquet orci mattis. Sed vehicula dapibus elementum. Aliquam nec est eget dolor congue ornare et eget arcu. Nam sollicitudin venenatis est sit amet pharetra. Sed eleifend. </p>
+                                <p>Maecenas imperdiet, sem nec malesuada venenatis, lorem elit placerat libero, eget fringilla purus massa gravida quam. Fusce ut sapien turpis. Maecenas vulputate libero risus, vel venenatis lacus efficitur luctus. Nullam eget metus lacinia, malesuada nulla eget, dignissim dolor dui. </p>
+                                <p>Maecenas dictum elementum tellus eget accumsan. Pellentesque eget sagittis neque. Duis a finibus diam. In hac habitasse platea dictumst. Morbi dignissim viverra rhoncus. Nullam convallis nulla commodo dapibus ornare. Sed maximus faucibus felis in ultricies. Aenean non gravida nunc, ut fringilla dui. Integer quis aliquam ex. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean ultricies convallis elit, vel tempor odio volutpat ac. Ut fermentum sagittis ipsum ut malesuada. Ut eu metus et nunc hendrerit consectetur in at nisl. Morbi odio felis, feugiat imperdiet elit ultrices, dapibus commodo metus. Praesent eu luctus lacus, in cursus urna. Pellentesque vitae pulvinar ex. Donec vel ligula fermentum, pharetra libero velit. </p>
+                                <p>Sed ac placerat ante. Sed viverra tellus et ante facilisis, tristique pretium lectus maximus. Phasellus auctor ornare leo laoreet volutpat. Mauris sodales justo et libero sollicitudin, fringilla convallis ligula rutrum. Quisque quis odio quis libero dapibus congue vitae nec massa. Integer auctor tempus imperdiet. Suspendisse eu nibh ut risus volutpat pharetra. </p>
+                                <p>Mauris convallis felis vel ipsum pulvinar, sit amet tincidunt ante dignissim. Integer et bibendum libero, ut blandit turpis. Mauris in venenatis velit. Cras quis cursus augue. Etiam dictum faucibus tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus blandit. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#bh4">Handling</a>
+                        <div class="collapse" id="bh4" data-parent="#accordionBehavior">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Nullam lectus magna, convallis sed ipsum at, lobortis tristique velit. Vivamus lacinia libero eu elit posuere, vitae lobortis ipsum suscipit. Mauris facilisis bibendum accumsan. Mauris hendrerit quam id turpis volutpat feugiat. Vivamus at leo consectetur, porttitor ipsum quis, aliquet nisi. Vestibulum ac quam quis nisi facilisis interdum eu eget nisl. Proin ac nulla quis ante fringilla tristique. Morbi aliquam sed sem ac facilisis. Donec varius, dolor mollis finibus eleifend, tellus dolor elementum risus, sit amet ornare ante purus a eros. Mauris aliquet rutrum nisl, gravida vulputate urna faucibus ut. Etiam vitae congue neque, quis tincidunt neque. Nunc ornare, quam aliquam dapibus varius, ligula augue morbi. </p>
+                                <p>Ut enim ligula, fermentum a molestie non, iaculis non velit. Donec eleifend, magna ac congue sagittis, tortor urna sodales libero, ut convallis ante velit non lacus. Vestibulum eu condimentum sem, rhoncus vestibulum leo. Morbi a ex ut nisi molestie gravida. Quisque mollis convallis laoreet. Cras interdum dolor vel mauris facilisis, sed sodales lacus maximus. Suspendisse potenti. Integer nec libero et orci interdum pulvinar ac mattis sapien. In pulvinar, mauris non ultricies consectetur, urna mi varius erat, vehicula venenatis arcu felis vel nulla. Maecenas ante ligula, consectetur nec neque quis, pretium lacinia magna. Maecenas arcu nisl, feugiat in vestibulum quis, laoreet quis lacus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque purus eros, dignissim tincidunt rhoncus sit amet, accumsan in enim. Pellentesque id tortor est. Phasellus sagittis ex ut lectus viverra pulvinar. Sed quis convallis risus, vel sagittis eros. Quisque aliquam accumsan egestas. </p>
+                                <p>Vivamus elementum, neque a blandit molestie, nibh nunc vestibulum lacus, sit amet volutpat sem lacus faucibus ante. Nullam et orci ornare, finibus lectus ultricies, varius sapien. Fusce vitae dolor eros. Morbi scelerisque sit amet justo ac laoreet. In vel dignissim orci. Aliquam blandit nisi in velit eleifend. </p>
+                                <p>Suspendisse a nibh orci. In vitae urna quis ipsum convallis hendrerit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer nisl ante, pretium in varius nec, condimentum ut lacus. Curabitur eu rutrum nulla. Nulla dui est, commodo gravida lobortis quis, vulputate at massa. Morbi nisi erat, ultrices sed aliquam sit amet, luctus a ipsum. Morbi felis mauris, facilisis id facilisis ut, ultricies non ante volutpat. </p>
+                                <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec quam nunc, dictum vel tincidunt nec, suscipit et odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam posuere orci quis enim tincidunt, sit amet sollicitudin ex sagittis. Donec volutpat maximus tortor in hendrerit. Phasellus iaculis magna nec eros condimentum, sed dapibus lectus ultricies. Curabitur ullamcorper in lorem quis imperdiet fusce. </p>
+                                <p>In euismod diam in arcu tempus ornare. Aliquam semper tellus consectetur fermentum mollis. Etiam semper elementum nunc, vitae rhoncus justo laoreet sit amet. Sed pulvinar lectus eget erat auctor, eget finibus tellus finibus. Fusce ac nisl erat. Etiam elementum ex vitae mauris scelerisque luctus. Mauris id felis blandit, efficitur augue quis, porttitor sapien. Nam ex ex, imperdiet vel lacinia vitae, convallis a sem. Nullam id facilisis dolor. Duis semper, erat sit amet mollis laoreet, tortor quam est. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#bh5">Dragon Proofing a Room</a>
+                        <div class="collapse" id="bh5" data-parent="#accordionBehavior">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Quisque consequat mattis quam, ac eleifend. </p>
+                                <p>Sed ac neque sagittis, sodales metus quis, pharetra est. Donec ornare diam eros, in semper ex imperdiet eget. Suspendisse gravida tortor a vestibulum mollis. Nullam condimentum dapibus sapien. Proin ullamcorper, metus ac imperdiet facilisis, magna erat scelerisque nulla, euismod pretium ipsum augue non velit. Duis vestibulum. </p>
+                                <p>Nullam quis mollis massa. Donec iaculis, nulla ut dictum varius, dui neque eleifend nunc, vel bibendum leo metus nec turpis. Phasellus efficitur hendrerit justo, ac convallis arcu pharetra sed. Maecenas at eros varius, porta elit vel, suscipit diam. Phasellus feugiat consequat felis ut fermentum. Pellentesque a nibh nec urna eleifend elementum nec quis justo. Donec tempus ligula ut nunc pharetra, at pellentesque sem malesuada. Sed ut augue eros. Vestibulum tempus, nisi et vestibulum lacinia, risus nulla sagittis lectus, eget maximus arcu nunc at lacus. Fusce vivamus. </p>
+                                <p>Duis id pulvinar massa. Nulla gravida sapien dui, eget vestibulum sapien pellentesque et. Quisque tincidunt, turpis vel iaculis imperdiet, ligula nulla scelerisque tellus, blandit ornare leo nisl id justo. Nam lectus dui, accumsan a ipsum sit amet, aliquet porta eros. Nam rutrum viverra tellus, non molestie nunc varius at. Nam vestibulum, libero ac commodo euismod, odio ligula sodales felis, ut blandit risus lectus et justo. Integer molestie. </p>
+                                <p>Ut aliquam est nisl, et fermentum quam commodo vel. Donec pellentesque odio in lorem aliquet bibendum. Ut porta lobortis ante a rhoncus. Maecenas non dapibus mauris, non auctor justo. Quisque posuere leo nisl. Integer a semper sem. Fusce at massa vel tellus nam. </p>
+                                <p>Quisque lacinia augue at ligula euismod, quis vestibulum libero volutpat. Nam bibendum est arcu, vitae tempus nunc elementum sed. Praesent hendrerit, turpis vel imperdiet pellentesque, arcu lacus luctus est, non feugiat dui ante eu nulla. Etiam finibus odio velit, eu pretium et. </p>
+                                <p>Aliquam condimentum a neque eget dapibus. Nullam faucibus nisl vel nisi faucibus pulvinar. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus mauris urna, sagittis eget ex sed, sodales tincidunt felis. Integer aliquam ac augue id pretium biam. </p>
+                                <p>Cras vel felis et mauris scelerisque dictum vitae elementum quam. Aliquam vel sem ut est auctor rutrum sollicitudin ac nulla. In ornare vehicula augue sit amet pretium. Nunc ut tincidunt nunc. Vestibulum aliquam at orci. </p>
+                                <p>Nam ultricies placerat ex sed aliquet. Praesent quis laoreet magna, at dictum ipsum. Etiam et mi lorem. Nunc ut arcu in sapien cursus vehicula. Integer facilisis, metus id pulvinar fringilla, sapien tellus mattis elit, at vulputate mauris lacus et magna. Nunc sollicitudin tortor non erat efficitur porttitor. Cras at nisi a sem elementum ultricies. Quisque iaculis tellus nec neque aenean. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#bh6">Are they nocturnal animals?</a>
+                        <div class="collapse" id="bh6" data-parent="#accordionBehavior">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Pellentesque porta leo quis purus euismod ultrices. Curabitur eget vulputate nulla. Duis eu dolor mattis, egestas sapien non, consequat ipsum. Curabitur laoreet vel risus ac interdum. Sed at dictum elit. Sed malesuada leo sed magna luctus, vel porttitor lacus tempor. Vestibulum viverra dolor sem, vestibulum bibendum massa hendrerit vitae. Aenean placerat lacinia est, tristique cursus lorem malesuada id. Aliquam nec blandit nisl. Proin eget ligula imperdiet nisi pretium dictum ultricies tincidunt velit. Aliquam et non. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#bh7">Do dragons socialize much with each other?</a>
+                        <div class="collapse" id="bh7" data-parent="#accordionBehavior">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Phasellus pharetra enim vitae volutpat aliquet. In quis finibus risus. Nam vulputate nulla tortor, a sollicitudin tellus lacinia et. Suspendisse pharetra dui augue, eu venenatis ex scelerisque eu. Mauris urna felis, pulvinar eu blandit quis, ultrices at nisi. Praesent non nisl at. </p>
+                                <p>Sed vel nunc augue. Curabitur malesuada massa porta feugiat viverra. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis elit odio, efficitur et fringilla id, lacinia eu urna. Donec pulvinar quam vitae imperdiet vulputate. Etiam facilisis viverra turpis. Nam felis velit, sollicitudin vitae malesuada ac, imperdiet eget nibh. Pellentesque habitant morbi orci. </p>
+                                <p>Nullam ornare mauris lectus, sed vulputate lorem mattis scelerisque. Nullam pellentesque, arcu vel eleifend imperdiet, mi tortor varius leo, eget ornare ligula ipsum varius tortor. Etiam sit amet purus augue. Integer semper risus at quam tincidunt lacinia. Maecenas id. </p>
+                                <p>Phasellus ac euismod orci. Nullam ullamcorper sagittis ornare. Nunc condimentum eros massa, ac molestie sem elementum sollicitudin. Nunc et nisl a nulla tempor semper at vel. </p>
+                                <p>Integer id arcu leo. Proin congue, urna ut pulvinar consequat, ante risus eleifend purus, at mollis eros arcu non mauris. Donec ornare accumsan erat, quis fringilla justo rhoncus quis. Proin nec luctus eros. Curabitur a blandit risus. Vivamus vestibulum suscipit lorem. Donec a tempus lacus. Nunc et dolor non ex porta luctus in sed lectus. Mauris tempus euismod elit, non pulvinar nisi varius finibus. Suspendisse sed lorem tortor. Vivamus posuere sem sit amet auctor vehicula. Phasellus ornare lorem et lacinia gravida. Morbi interdum scelerisque est, ut fringilla mauris varius in. Proin eget nisi et nibh viverra vulputate et a mauris. Nulla non neque purus. Duis malesuada ante sed sem fermentum rhoncus. Vestibulum ante ipsum leo. </p>
+                                <p>Vivamus in tortor malesuada, viverra lorem quis, pharetra sem. Duis in justo nec quam convallis accumsan. Integer sed augue dolor. In id eros at quam tristique tempor a sit amet lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis justo tortor, ut egestas risus tristique ut. Praesent pharetra eu mi ut ullamcorper. Integer id feugiat nulla. Cras malesuada varius massa, ut vulputate ex commodo vel. Sed gravida erat id aliquet condimentum. Suspendisse eros libero, consectetur sit amet fringilla ac, molestie eu libero. Etiam porta sapien a felis malesuada, id venenatis sem pretium. Morbi ligula eget. </p>
+                                <p>Aenean feugiat lorem eu felis venenatis, ac volutpat lectus aliquam. Praesent id ipsum ac est sollicitudin semper. Integer eget orci aliquam, egestas tellus eu, hendrerit arcu. Nulla nibh est, ultricies et porttitor ac, sodales quis mauris. Ut convallis quam ac ipsum varius molestie. Maecenas laoreet nulla urna, dignissim mattis massa maximus eu. Proin congue diam eu libero mollis maximus. Vivamus posuere est vel auctor faucibus. Integer rhoncus eget neque a viverra. Nulla facilisi. Quisque auctor laoreet lorem, ac cursus justo faucibus at. Morbi pulvinar ullamcorper diam non porta. Cras non quam velit. Praesent ut mi vel urna lectus. </p>
+                                <p>Nam tellus odio, rhoncus a justo at, auctor elementum metus. Nam tempus, purus at malesuada tristique, leo tellus euismod est, ac sagittis ipsum diam sit amet purus. In sit amet erat sit amet tellus ultricies commodo. Aenean fermentum, nulla eget dapibus pulvinar, sapien tellus aliquam ante, a congue mi purus vitae ex. In dolor turpis, bibendum aliquam. </p>
+                                <p>Curabitur quis imperdiet felis, fringilla molestie ligula. In quis rhoncus nisi, consequat iaculis lacus. Sed orci nulla, gravida ac elit vel, congue mollis massa. Vestibulum ut sem ut nibh viverra tincidunt. Sed non ex in magna egestas. </p>
+                                <p>Nullam non mauris bibendum erat porta rhoncus sed at risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia velit. </p>
+                                <p>Cras faucibus justo scelerisque bibendum euismod. Sed condimentum aliquet vehicula. Aenean molestie rutrum erat quis porttitor. Sed congue egestas leo et accumsan. Aliquam dictum volutpat ligula a tempus. Ut vehicula justo sit amet felis vestibulum, a rutrum velit molestie. Ut tristique, nisi non rutrum tincidunt, erat felis maximus felis, nec dictum magna ante in metus. Pellentesque commodo posuere lacus quis rutrum. Fusce a felis accumsan, finibus quam sed, tincidunt ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer quam ligula, placerat ac orci et, blandit viverra ipsum. Integer ut quam dolor. Praesent a neque sem. Curabitur eu pulvinar morbi. </p>
+                                <p>Ut pharetra accumsan finibus. Duis id sapien purus. Mauris nibh elit, vestibulum eu condimentum sed, efficitur in neque. Phasellus tempus, justo vitae vehicula rhoncus, dolor purus bibendum justo, ut suscipit lectus sapien ut lectus. Sed nec nulla id est tristique vestibulum in non mi. Proin tincidunt imperdiet porttitor. Maecenas rhoncus varius pretium. Donec eget ante a ipsum rutrum vestibulum et ac nisi. Praesent non tristique urna. Vivamus efficitur metus eget diam dapibus porttitor porta vitae purus. Nam lacinia erat a nunc elementum, at consequat lectus ullamcorper. Pellentesque habitant morbi tristique senectus et netus et efficitur. </p>
+                                <p>Aliquam erat volutpat. Nullam gravida urna in eleifend accumsan. Integer rutrum volutpat lorem sit amet efficitur. Donec nec semper nisl. Aenean libero ex, hendrerit at facilisis vitae, sodales sed augue. Cras non posuere risus. Aliquam erat volutpat. Nunc dolor velit, dapibus vel nisl ac, venenatis tincidunt leo. Praesent at rutrum dolor, nec maximus arcu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus venenatis tincidunt gravida. Curabitur semper sem congue augue luctus, vitae volutpat lectus finibus. Vestibulum malesuada nunc nec leo varius, id faucibus tellus tincidunt. Nullam a risus a eros blandit tincidunt id vel sapien. Nullam vel ullamcorper neque, sed dictum mi. Aliquam erat volutpat. Curabitur sit amet ligula et sem sodales vulputate. Morbi ullamcorper nibh vitae nulla facilisis, vitae commodo quam tincidunt. Proin sed ipsum vehicula, facilisis ex ac, tempor dolor. Nam eu felis fringilla, maximus mi id, sollicitudin erat. Duis non tellus eu felis finibus maximus id in quam. Curabitur a diam ut felis pellentesque dictum. Nam massa eros, ullamcorper vel pharetra at, placerat eleifend sem. Phasellus commodo sapien eget lacus erat curae. </p>
+                                <p>Phasellus hendrerit in nibh varius imperdiet. Suspendisse non arcu id elit aliquam efficitur at et metus. Aliquam rhoncus ex ex, sed euismod ipsum venenatis ac. Nulla arcu magna, varius id scelerisque id, interdum ut orci. Donec ac eu. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row align-items-center mx-2 mx-md-4 my-4">
+            <div id="accordionEnclosures" class="col-md-9 shadow px-1 px-md-5 pb-5 cardStyle">
+                <h3 id="linkEnclosures" class="h3Title text-center py-4">Enclosures</h3>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#e1">Temperature</a>
+                        <div class="collapse" id="e1" data-parent="#accordionEnclosures">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Integer quis aliquet diam. Fusce egestas facilisis augue vitae fringilla. Etiam fringilla ante non ex aliquet aliquet. Aliquam semper turpis eu massa vestibulum efficitur. Pellentesque et ligula. </p>
+                                <p>Ut bibendum facilisis libero, in cursus augue faucibus quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at turpis vel nunc luctus mattis vel id quam. Vivamus quis dignissim quam. Aenean et nulla eget lectus efficitur placerat. Morbi rutrum tincidunt pharetra. Nullam a ante non ligula accumsan eleifend ut ac quam. Proin non auctor nulla. Sed venenatis dui non ipsum pulvinar porttitor. In vel magna magna. Vestibulum porttitor. </p>
+                                <p>Integer commodo nunc et sollicitudin sagittis. Ut ac lectus eget orci malesuada finibus. Pellentesque at placerat massa. Aenean non libero at nisl tristique sagittis. Fusce in risus auctor, convallis lacus quis, dignissim velit. Suspendisse iaculis, quam sit amet iaculis gravida, odio enim cursus mauris, vitae volutpat massa lacus non magna. Ut eget ligula in ipsum tempor fringilla at et ex. In nec elementum diam. Morbi vehicula, felis eget gravida vestibulum, enim nisi imperdiet sapien, nec finibus tortor ex vel lorem. Fusce congue, dolor blandit bibendum pellentesque, leo justo facilisis nisi, nec porta est purus sit amet dolor. </p>
+                                <p>Donec lacinia neque consequat magna consequat, et facilisis lacus ultricies. Quisque sit amet tempus sem, sed pellentesque nisi. Cras blandit tristique odio a congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae commodo arcu. Proin et nisl consequat, hendrerit enim in, condimentum mi. Vestibulum fermentum elementum ipsum eu justo. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#e2">Lighting</a>
+                        <div class="collapse" id="e2" data-parent="#accordionEnclosures">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Ut egestas id nisi at pharetra. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer enim lorem, venenatis ultricies molestie id, facilisis nec dolor. Vivamus quam mi, facilisis sit amet auctor a, semper ac lacus. Aliquam ultrices aliquet leo, vel commodo leo pretium vitae. Fusce scelerisque ligula augue, vehicula volutpat risus sagittis eget. Proin in ipsum sit amet nibh faucibus ornare eu vel ligula. Sed sed purus tempor, cursus ex sit amet, tristique massa. Vestibulum semper finibus rutrum. Aliquam erat volutpat. Ut pretium metus ac libero dictum euismod. Praesent id risus eu ante mattis fringilla eget eget erat. Curabitur tellus libero, ornare et dapibus et, varius sed mi. Curabitur scelerisque diam non lorem bibendum aliquam. Nulla dapibus vitae arcu et pulvinar. In hac habitasse platea dictumst. Donec laoreet elementum arcu vitae aliquam. Aenean dapibus elit tellus, a pharetra sapien cursus ac. Integer arcu orci, lacinia ac suscipit eu, tincidunt et dui. Phasellus justo. </p>
+                                <p>Ut egestas id nisi at pharetra. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer enim lorem, venenatis ultricies molestie id, facilisis nec dolor. Vivamus quam mi, facilisis sit amet auctor a, semper ac lacus. Aliquam ultrices aliquet leo, vel commodo leo pretium vitae. Fusce scelerisque ligula augue, vehicula volutpat risus sagittis eget. Proin in ipsum sit amet nibh faucibus ornare eu vel ligula. Sed sed purus tempor, cursus ex sit amet, tristique massa. Vestibulum semper finibus rutrum. Aliquam erat volutpat. Ut pretium metus ac libero dictum euismod. Praesent id risus eu ante mattis fringilla eget eget erat. Curabitur tellus libero, ornare et dapibus et, varius sed mi. Curabitur scelerisque diam non lorem bibendum aliquam. Nulla dapibus vitae arcu et pulvinar. In hac habitasse platea dictumst. Donec laoreet elementum arcu vitae aliquam. Aenean dapibus elit tellus, a pharetra sapien cursus ac. Integer arcu orci, lacinia ac suscipit eu, tincidunt et dui. Phasellus justo. </p>
+                                <p>Fusce et suscipit nulla. Nullam et consequat dolor, quis lacinia risus. Integer quis ligula et turpis pharetra dignissim. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce lacinia leo non neque tristique, in vestibulum quam feugiat. Aenean vel dolor erat. Vivamus tristique urna eu velit suscipit, sit amet hendrerit quam tristique. Ut semper pretium diam, eget congue mi volutpat id. Sed vitae nisl iaculis, varius mi et, ullamcorper mauris. Duis eros leo, ullamcorper non odio a, posuere consectetur tortor. Morbi scelerisque venenatis odio, at laoreet elit. Suspendisse potenti. Nam consectetur porta justo pretium eleifend. In posuere, lectus a vulputate convallis, sapien mauris imperdiet odio, sed dignissim ligula orci hendrerit enim. Pellentesque nullam. </p>
+                                <p>Vestibulum convallis leo a posuere dictum. In tempor id lacus at interdum. Curabitur bibendum hendrerit efficitur. Quisque malesuada quis risus nec pellentesque. Aenean convallis a tellus in porta. Sed porttitor est at erat ultrices, vel varius velit aliquet. Fusce sodales nibh vel magna pellentesque interdum. Cras sed nisl vitae erat malesuada euismod non vitae tellus. Praesent non velit commodo, rhoncus elit vel, viverra libero. Mauris sed vulputate urna, vel aliquam arcu. Aliquam vitae erat pellentesque, mattis ipsum ut, pellentesque eros. Donec nec lorem posuere, tempus lorem vel, mollis nisi. Nunc varius sem in elit tincidunt tincidunt. Cras non dictum augue, sollicitudin finibus lacus. Donec tristique orci at interdum tristique. Sed ut ex orci. In non tellus dictum, tempor leo et, congue eros. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed aliquet sollicitudin condimentum. Cras imperdiet tortor consequat felis tempor vehicula. Nullam nec urna elit. Cras pretium laoreet diam. Proin eu fermentum lectus. Etiam suscipit faucibus turpis porta eleifend. Etiam consequat tellus a orci iaculis congue. Vestibulum condimentum enim sit amet tristique aliquet. Nullam ultrices lorem ac porttitor porttitor. </p>
+                                <p>Nullam porttitor accumsan sem, et tristique ipsum. Donec tristique id tortor at malesuada. In vehicula molestie massa. Cras eget magna at urna vulputate vulputate. Aenean lectus leo, molestie nec accumsan eu, pretium ac ligula. Duis sed lectus et ex blandit aliquet. Etiam sit amet mollis tellus. Aliquam et lacus a ligula finibus laoreet. Orci varius natoque penatibus et magnis dis parturient tellus. </p>
+                                <p>Nulla nec finibus tellus. In vel faucibus lacus, vel vestibulum ex. Ut ac imperdiet sapien. Phasellus facilisis, elit ultricies aliquet cursus, eros elit porta eros, vel facilisis arcu diam ut purus. Nunc tristique porttitor nibh at aliquam. Integer posuere ipsum magna, id euismod nibh dapibus a. Quisque aliquet sem eu eros commodo, a vestibulum justo ultricies. Vivamus pretium nunc a turpis ornare, eget mattis quam porta. Ut ut diam nec neque ultrices fringilla. Nunc in ultrices nibh, ac facilisis arcu. Morbi quis purus fermentum, sagittis lorem in, malesuada dolor. Sed eget lacinia ex. Cras dictum volutpat dui. Vestibulum non sem et est dignissim gravida. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#e3">Heat Sources</a>
+                        <div class="collapse" id="e3" data-parent="#accordionEnclosures">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Duis sodales nibh eu tellus vestibulum, non suscipit ipsum tempor. Ut aliquet lobortis turpis, nec lobortis augue tristique at. Aliquam sagittis tortor id lacus rutrum, dignissim condimentum urna lobortis. Mauris nibh dui, placerat at vestibulum sed, cursus vitae orci. In faucibus viverra accumsan. Proin fringilla orci nunc. </p>
+                                <p>Ut quis ultrices massa, a mollis tellus. Vestibulum sit amet orci sed turpis hendrerit accumsan. Ut sagittis tincidunt placerat. Ut imperdiet nec nibh non varius. Donec dictum vestibulum consectetur. Sed neque neque, dapibus non nulla vel, tristique sodales massa. Duis sed molestie lorem. Vivamus a urna quis elit venenatis laoreet. Suspendisse vel interdum libero. Vestibulum egestas, ipsum sed mollis tempor, ipsum elit ultricies erat, eu tristique erat tortor quis risus. In pellentesque lectus vel augue dignissim porttitor. Sed ultrices tempus enim consequat aliquam. Vestibulum nec urna et nisl rutrum viverra. Donec in mauris tincidunt, sodales ante sed, fermentum ante nam. </p> 
+                                <p>Quisque nec ligula quis elit dapibus lacinia sed a lorem. Fusce nec mauris eget urna varius fringilla a ac metus laoreet. </p> 
+                                <p>Sed a nibh fringilla, eleifend mauris eget, consectetur ante. Mauris porta suscipit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; duis. </p> 
+                                <p>Nulla accumsan lectus augue, non aliquam nisl hendrerit sed. Suspendisse ligula libero, vulputate quis pharetra sed, tincidunt in risus. Maecenas laoreet interdum augue ut ornare. Donec orci diam, facilisis eu suscipit nec, fringilla in massa. Etiam vehicula ultricies ex, quis auctor nulla lobortis non. Aliquam erat volutpat. Cras egestas orci at pretium tincidunt. Vivamus porttitor lorem at lectus dignissim, nec commodo ante mattis. Morbi auctor mollis quam vel placerat. Aliquam erat volutpat mauris. </p> 
+                                <p>Integer vestibulum tincidunt leo, non semper dui laoreet ac. Nunc a quam suscipit, efficitur justo ut, imperdiet risus. Suspendisse in semper felis. Aenean facilisis nec lorem sed malesuada. Maecenas lobortis faucibus nunc, quis rhoncus diam bibendum eget. Pellentesque interdum ligula non orci accumsan, finibus sodales neque euismod. Vestibulum id magna fringilla, pellentesque diam a, efficitur erat. Aliquam euismod lobortis justo ut sagittis. In non augue felis. Proin id rutrum felis. Suspendisse dignissim augue eget aliquam tincidunt. Aenean vitae molestie justo. In ultricies justo eu sem placerat blandit. Proin in sodales dui. Morbi viverra ac nisl nec semper. Phasellus gravida enim augue, sit amet elementum eros faucibus vitae. Aenean facilisis sem eget ipsum molestie accumsan. Nullam tempor tellus a feugiat ornare. Etiam dapibus eget enim et bibendum cras amet. </p> 
+                                <p>Duis gravida aliquam nisi ut convallis. Duis convallis mi a libero vestibulum, nec accumsan est porttitor. Pellentesque congue scelerisque nibh quis mollis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque id fringilla sapien, vel suscipit sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis consectetur velit. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#e4">Water</a>
+                        <div class="collapse" id="e4" data-parent="#accordionEnclosures">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Integer mollis erat ut lacus porttitor, vel tristique purus viverra. Donec efficitur, justo non sagittis egestas, leo tellus semper nisi, in bibendum metus lorem vitae neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed condimentum tellus eget ligula sollicitudin viverra. Etiam id elit faucibus, ultrices nulla id, suscipit lorem. In hac habitasse platea dictumst. Quisque sed urna velit. Aenean nec enim eget odio pretium cursus eget in tortor. Quisque id bibendum ipsum. Proin sed sem turpis. Maecenas ultricies, turpis vitae semper accumsan, dui leo ultrices mi, et pharetra lectus felis eu felis. Aenean vulputate maximus orci eget dapibus. Integer a libero rhoncus, sollicitudin odio in, malesuada velit. Nulla non nibh in purus maximus tempor quis eget risus. Phasellus vulputate, enim vitae facilisis volutpat, dui magna condimentum diam, eu tempus ipsum justo eget nisi. Phasellus in ornare ex, id tristique urna. Nam ut congue neque. Ut vehicula porta ex sit amet pulvinar. Pellentesque gravida laoreet. </p> 
+                                <p>Donec augue massa, egestas at vehicula vel, bibendum et eros. Praesent hendrerit rhoncus rutrum. Pellentesque ac diam vel diam commodo tincidunt sit amet vitae odio. Morbi et pharetra urna, sit amet commodo lacus. Morbi arcu eros, convallis in pharetra sed, luctus sit amet leo. Phasellus ac fermentum tortor. Sed vitae augue vitae mauris egestas suscipit. Praesent libero odio, lobortis quis metus vitae, cursus consectetur velit. Curabitur lobortis, mi ut ultrices porttitor, nunc neque mollis tellus, sit amet posuere odio orci non sem. Cras ut justo tellus. Praesent vitae placerat. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#e5">Humidity</a>
+                        <div class="collapse" id="e5" data-parent="#accordionEnclosures">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Duis eu euismod ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam commodo cursus velit in porttitor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras mi metus, pharetra sit amet ex eu, vehicula mollis neque. Aenean malesuada turpis nibh, pellentesque sagittis odio aliquet in. Suspendisse potenti. Maecenas sodales, felis ac tempus viverra, leo nisl tempus turpis, quis eleifend lacus arcu eget mi. Sed ullamcorper, diam vitae viverra fermentum, sapien tortor elementum magna, vitae dignissim odio libero et turpis. Quisque placerat, turpis a venenatis pretium, odio arcu fermentum mauris, quis rhoncus purus erat ac libero molestie. </p> 
+                                <p>Nunc sed libero consectetur, sagittis ex vehicula, venenatis augue. Curabitur nec risus sed nibh fringilla porttitor id nec lorem. Vestibulum feugiat arcu eget tellus semper vulputate. Duis auctor at ligula nec pharetra. Nulla in tellus eget ante condimentum ac. </p> 
+                                <p>Mauris ante massa, laoreet sed tincidunt quis, rhoncus vitae nisl. Fusce aliquam eget lacus sed porta. Sed vestibulum libero odio, nec congue nisl scelerisque quis. Cras et tortor vel sem ullamcorper finibus. Quisque faucibus scelerisque urna quis imperdiet. Sed vel suscipit erat, id fringilla ante. Sed velit felis, interdum in massa eget, ullamcorper convallis ipsum. Vestibulum consectetur varius diam, eu metus. </p> 
+                                <p>Sed mi mauris, eleifend vel metus vel, aliquam pellentesque orci. Curabitur erat massa, ullamcorper vel placerat id, sollicitudin ut lacus. Morbi justo erat, porta at faucibus consectetur, consequat a purus. Suspendisse suscipit egestas finibus. Etiam sed ornare erat. Maecenas fringilla viverra maximus. Donec nibh neque, scelerisque quis pharetra. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#e6">Substrate</a>
+                        <div class="collapse" id="e6" data-parent="#accordionEnclosures">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Vestibulum hendrerit dignissim arcu, porta aliquam sem semper nec. Cras bibendum arcu a lectus vehicula, rutrum eleifend augue cursus. Mauris lobortis rutrum nunc quis porta. Proin ac nisi posuere, tincidunt dolor id, viverra nunc. Aenean bibendum mattis metus in rhoncus. Nam non magna porta, pharetra dolor a, vehicula ex. Nullam eget auctor risus. Fusce est risus, imperdiet vitae pretium ut, aliquet non justo. </p> 
+                                <p>Sed ornare sit amet ex at sagittis. Nunc pharetra est et justo molestie, quis rutrum quam imperdiet. Phasellus in tempus sem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus varius ut magna sed condimentum. Fusce vulputate nisi quis erat rutrum, quis tempus augue accumsan. </p> 
+                                <p>Suspendisse potenti. Fusce massa ligula, aliquet eget finibus a, sollicitudin ac massa. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc non lorem mollis, faucibus ligula eu, ullamcorper velit. Donec cursus vehicula dui at elementum. Donec interdum orci tellus, in mattis massa tempus ac. Mauris eget odio eros. Nulla at velit enim. In efficitur hendrerit neque in gravida. Fusce non neque et dolor tristique laoreet. Nullam elementum est dignissim accumsan aliquet. Phasellus scelerisque purus quis dolor tincidunt, nec molestie dolor finibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lobortis dolor nec mi fermentum, ut efficitur risus iaculis. Maecenas eget consequat odio. Duis vitae aliquet lectus, eu facilisis nulla. Nunc sit amet luctus eros. Quisque finibus erat ornare odio elementum pharetra. Donec vel sodales quam. Suspendisse non metus eu purus tincidunt lectus. </p> 
+                                <p>Proin eleifend nibh et imperdiet semper. In hac habitasse platea dictumst. Suspendisse potenti. Donec placerat velit tortor, eget vestibulum nibh euismod ut. Sed mattis dolor eu libero pretium pharetra. Donec ut posuere dolor. Quisque sit amet neque libero. Nunc vel interdum erat, eu venenatis odio. Sed rhoncus tristique nunc eget tincidunt. Maecenas et risus sit amet justo dictum eleifend scelerisque ut libero.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#e7">Glass and Snout Damage</a>
+                        <div class="collapse" id="e7" data-parent="#accordionEnclosures">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Nam vulputate consectetur porta. Sed id metus nec justo aliquet aliquet nec non enim. Maecenas et erat ultricies, eleifend orci quis, finibus risus. Cras sodales diam id ligula molestie tempor ornare id ligula. Cras pharetra arcu tortor, id hendrerit velit dictum id. Ut vitae luctus erat. Duis interdum nisl erat, vitae dignissim nisi euismod ac. Mauris laoreet dolor et enim mattis, eu vehicula mauris vehicula. Mauris et feugiat quam. Vestibulum porta augue nisi. Aenean mauris mauris, facilisis at hendrerit at, sagittis ut mauris. Nullam fermentum, ante a tempus tincidunt, lectus nulla fringilla tortor, a feugiat lectus enim nec arcu. Suspendisse auctor urna id leo accumsan, ut varius neque consequat. Proin scelerisque porttitor tempor. Suspendisse porta congue nisl, ut dictum augue dapibus nec. Fusce malesuada ultrices eros sed ornare. Maecenas blandit sed purus non interdum. In euismod aliquet nisi et feugiat. Mauris vulputate non tellus vitae pretium. Fusce congue suscipit vestibulum eleifend. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#e8">Size of Enclosure</a>
+                        <div class="collapse" id="e8" data-parent="#accordionEnclosures">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Sed tristique, nibh et eleifend eleifend, urna justo suscipit ante, a ornare leo dui ut arcu. Praesent suscipit dolor ac lacus non. </p> 
+                                <p>In vel mollis arcu. Aenean lacinia blandit lacus. Nam venenatis nunc vel nibh egestas, a placerat justo efficitur. Praesent fermentum, orci ut pulvinar eleifend, mi erat elementum justo, vitae mollis dolor leo volutpat nunc. Praesent in nulla dui. Nunc commodo lacinia erat ut venenatis dolor. </p>
+                                <p>Cras consequat urna arcu, cursus efficitur leo suscipit ac. Sed elementum nibh laoreet neque commodo ultricies. Praesent porttitor in felis in viverra. Integer rhoncus gravida sapien, at volutpat sem eleifend luctus. Praesent molestie metus ac nunc aliquet pulvinar. Duis nisi purus, viverra vitae faucibus vel, cursus id justo. Donec hendrerit vulputate congue. Suspendisse eget augue a neque auctor pulvinar vel dapibus ipsum. Nulla sed malesuada urna. Etiam facilisis, elit id gravida pretium, arcu metus efficitur enim, eu efficitur odio dolor ac sapien. Curabitur eu magna ut ante aliquam convallis. Proin fringilla odio massa, non hendrerit lorem luctus eu. Nulla placerat ut. </p> 
+                                <p>Cras tempus leo et ante sodales porta. Maecenas nibh ipsum, efficitur quis nisi nec, varius sollicitudin orci. Maecenas pellentesque convallis tellus, vehicula varius elit tempus quis. Fusce gravida dui luctus, mattis leo sit amet, bibendum est. Vivamus non urna orci. Duis tellus risus, vehicula id volutpat posuere, tempus a mauris. </p> 
+                                <p>Praesent finibus nunc neque, sed aliquet ipsum dictum ut. Sed volutpat magna quis hendrerit dictum. Sed felis nisl, viverra fermentum ornare at, gravida sit amet purus. Nulla faucibus augue non est blandit, sed placerat mi auctor. Aliquam posuere dapibus ante et feugiat. Suspendisse potenti eleifend. </p> 
+                                <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec ex augue, molestie sit amet nisl ac, fringilla cursus neque. Proin congue felis at est egestas, sit amet porttitor tellus pulvinar. Vivamus dapibus diam mollis massa placerat vulputate. Aenean consequat consequat lectus in mollis. Vivamus tempus turpis duis. </p> 
+                                <p>Ut dapibus orci tellus, ac dignissim neque luctus eu. Ut viverra ultrices neque ac scelerisque. Nam eu lorem maximus, mollis nulla quis, pretium mi. Sed molestie, velit a pretium tempor, enim libero volutpat lorem, eget placerat erat magna et sem. Pellentesque quis feugiat diam. Nunc lacinia iaculis commodo. Sed porta lectus mollis nisl laoreet, quis facilisis erat commodo. Vivamus euismod nibh augue, quis vulputate lacus lobortis malesuada. Nunc sed suscipit ligula. Nam pharetra massa erat, ac tempus ipsum laoreet nec. Phasellus porttitor, erat id aliquam interdum, libero ipsum dapibus velit, vel porta purus orci nec odio. Suspendisse dui magna, dictum in nunc in, tempus sagittis nisl. Duis varius faucibus sapien in hendrerit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus cras amet. </p> 
+                                <p>Ut sed ligula eleifend, congue velit at, convallis purus. Nullam maximus purus ornare consequat malesuada. Praesent mollis ex nisi, eu viverra est auctor a. Nullam sed morbi. </p> 
+                                <p>Cras pulvinar felis quis ligula interdum, in malesuada ex fringilla. Donec elementum at massa non accumsan. Suspendisse euismod ipsum erat, a lacinia libero dignissim vel. Proin eget viverra nisi. Proin eget nec. </p>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#e9">Live Plants in the enclosure</a>
+                        <div class="collapse" id="e9" data-parent="#accordionEnclosures">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Proin porta orci in mi iaculis molestie. Mauris luctus lacus dui, a mattis augue tempus at. Duis ut ornare risus. Fusce at egestas est, quis lobortis lacus. Praesent euismod malesuada laoreet. Curabitur consequat risus non dui placerat accumsan. Sed ut metus a tortor malesuada iaculis. Proin venenatis semper varius. Aenean ultricies cursus malesuada. Praesent eu erat aliquet, bibendum metus eu, condimentum nibh amet. </p> 
+                                <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam quis augue quis est ultrices elementum ullamcorper sed nulla. Nullam congue non mi in blandit. Pellentesque iaculis odio non turpis bibendum ornare. Phasellus orci velit, scelerisque vel mi laoreet, ullamcorper auctor massa. Nam at ex non nulla semper tempus. Nulla molestie augue in fringilla scelerisque. Sed sed facilisis ligula. Donec turpis dui, posuere vel arcu non, laoreet rutrum ipsum. Aliquam imperdiet nunc feugiat elementum pulvinar. In rutrum massa libero est. </p> 
+                                <p>In fringilla consectetur accumsan. Maecenas non tellus odio. Donec interdum congue velit, vitae imperdiet enim. In ut blandit mauris. Mauris vel vestibulum enim, ac consectetur elit. Donec dapibus id leo sed scelerisque. Morbi convallis eros sed libero luctus laoreet. Ut interdum ornare dapibus. Suspendisse potenti. Sed non nisi pretium, imperdiet est vel, iaculis turpis. Suspendisse eget euismod est, sit amet ornare nunc. Morbi elit enim, cursus id facilisis ut, sodales gravida urna. Cras faucibus ut enim id tincidunt. Nullam ex.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#e10">A Word about Home made enclosures and Toxic Substances</a>
+                        <div class="collapse" id="e10" data-parent="#accordionEnclosures">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Proin a est viverra, feugiat risus a, varius enim. Donec nec ullamcorper felis. Duis tristique diam id erat euismod consequat. Maecenas ac ante vel leo tincidunt hendrerit eget eu tortor. Integer nibh ligula, tincidunt viverra tincidunt quis, congue ut enim. Proin scelerisque elit quis nisi viverra eleifend. Integer facilisis sed arcu sed ultrices. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris at metus fermentum, tempus lorem eu, ullamcorper lacus. Mauris blandit varius dui quis condimentum. Integer lacinia lectus massa, id pellentesque erat posuere vel. Fusce congue suscipit enim, non imperdiet tellus. Integer et varius risus. Integer tempor, ante at aliquet bibendum, justo arcu mattis lorem, sit amet tempus lorem nisl et ipsum. Sed elementum ex et ex ullamcorper feugiat. Nulla purus augue, rhoncus id tempor sed, congue ut sem. Ut metus nisl, faucibus quis libero ut, maximus bibendum turpis. Sed ut tempus nunc. Praesent quis lobortis mauris, et mollis diam. Nulla facilisi. Morbi tincidunt aliquam ipsum, feugiat lacinia lectus posuere eu. Etiam porta varius neque, at sollicitudin eros hendrerit eget. Duis semper ullamcorper pretium. Praesent lectus felis, venenatis non justo ut, tincidunt pulvinar elit. Vestibulum iaculis biam. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 px-0 imgRPos d-none d-md-block">
+                <img src="img/navBrand.jpg" alt="Water dragon picture" class="img-fluid imgRounded shadow"/>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <ul class="list-unstyled float-left">
+                         <li><h5 class="text-light">Links</h5></li>
+                         <li><a href="index.html">Home</a></li>
+                         <li><a href="#">Care</a></li>
+                         <li><a href="store.html">Store</a></li>
+                         <li><a href="events.html">Events</a></li>
+                         <li><a href="mailing.html">Mailing List</a></li>
+                    </ul>
+                </div>
+                <div class="col text-center">
+                     <span class="text-light">Copyright &copy; 1995 - 2012</span><br>
+                     <span class="text-light">Please read <a href="about.html#linkCopy">Copyright Notice</a> | <a href="about.html#linkPrivacy">Privacy Policy</a></span>
+                </div>
+                <div class="col">
+                     <ul class="list-unstyled text-center float-right">
+                         <li><a href="about.html">About</a></li>
+                         <li><a href="about.html#linkContact">Contact</a></li>
+                     </ul>
+                </div>
+            </div>
+        </div> 
+    </footer> 
+
+</body>
+</html>

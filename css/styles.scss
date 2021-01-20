@@ -1,24 +1,92 @@
 @import "../node_modules/rfs/scss";
 
 $color-heading: #1ac2a6;
+$color-button: #c5c9cc;
+$color-buttonBorder: grey;
+$header-font: "Segoe UI Light", sans-serif; 
 
-h1, h2 {
+h1, h2, h3 {
+    font-family: $header-font;
     color: $color-heading;
 }
 
+.trans {
+    transition: transform 1s; //make hyperlinks shrink (instead of underline)
+}
+
+.trans:hover {
+    transform: scale(1.2); //make hyperlinks grow (instead of underline)
+    transition-duration: 1s;
+}
+
 .h1Title {
-    @include rfs(1.5rem);
+    @include rfs(1.5rem); //Add responsive font sizing to <h1>s
 }
 
 .h2Title {
-    @include rfs(1rem);
+    @include rfs(1rem); //Add responsive font sizing to <h2>s
 }
 
+.h3Title {
+    @include rfs(4rem); //Add responsive font sizing to <h3>s
+}
 
 .nav-item, .dropdown-item {
     text-align: center; //addition of centered text on nav-items & dropdown-items so BS class="text-center" doesn't have to be added to each li nav item.  
     white-space: nowrap; //added to keep 'Mailing List' from wrapping
     @media (min-width: 768px) { //Addition of BS class="text-md-left" @media call so that BS class doesn't have to be added to each item.  MD used because that's when nav snaps from list to icon.
         text-align: left !important;
+    }
+}
+
+body {
+    background-image: linear-gradient(to bottom right, rgb(50, 93, 50), rgb(113, 190, 113));
+
+    @media (max-width: 455px) { //added to keep spacing between fixed-top navbar and first element consistent when navbar hamburger gets pushed below navbar logo
+        padding-top: 190px;
+    }
+    @media (min-width: 456px) { //added to keep spacing between fixed-top navbar and first element consistent when navbar hamburger gets pushed next to navbar logo
+        padding-top: 150px;
+    }
+}
+
+a {
+    text-decoration: none !important; //Remove underlines on hyperlinks (replaced with growing text, or nothing)
+}
+
+footer a {
+    color: rgba(255,255,255,.5); //change <a> elements that are decendants of a <footer> to grey to match the navBar grey.
+}
+
+.cardLink {
+    color: black; //change the <a> elements that are in the Accordion cards to black text.
+}
+
+.cardStyle {
+    background-color: $color-button;
+    border-radius: 25px;
+}
+
+.imgLPos {
+    z-index: 100; //make image appear above content it overlaps with
+    margin-right: -25px; //make image overlap with neighboring column
+}
+
+.imgRPos {
+    z-index: 100; //make image appear above content it overlaps with
+    margin-left: -25px; //make image overlap with neighboring column
+}
+
+.imgRounded {
+    border-radius: 25px; //round image endges
+}
+
+h3[id^="link"] {
+    @media (max-width: 455px) { //Activate when navbar hamburger gets pushed below navbar logo
+        scroll-margin-top: 200px; //make page land 200px above where the hyperlink sends you for <h3>s that have an id beginning with "care"
+    }
+
+    @media (min-width: 456px) { //Activate when navbar hamburger gets pushed next to navbar logo
+        scroll-margin-top: 170px; //make page land 170px above where the hyperlink sends you for <h3>s that have an id beginning with "care"
     }
 }

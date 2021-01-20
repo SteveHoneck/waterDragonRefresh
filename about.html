@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf=8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="node_modules/@fortawesome\fontawesome-free/css/fontawesome.min.css" />
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script> <!--required for Bootstrap-->
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script> <!--required for Bootstrap-->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script> <!--required for JQuery used in scripts.js file, must come before bootstrap.min.js or some Boostrap features wont work (modal)-->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> <!--required for Bootstrap-->
+    <script src="js/scripts.js"></script>
+
+    <title>Chinese Water Dragon - About</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">
+                <div class="media">
+                    <img src="img/navBrand2.png" alt="Water dragon picture" width="125" class="d-inline-block align-self-center mr-2"/>
+                    <div class="media-body align-self-center">
+                        <h2 class="h2Title text-center text-wrap">Chinese</h2> 
+                        <h1 class="h1Title text-center text-wrap">Water Dragon</h1>
+                        <h2 class="h2Title text-center text-wrap">Care Page</h2>
+                    </div>
+                </div>
+            </a>
+            <button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown" >
+                        <a class="nav-link dropdown-toggle" href="#" id="navDrop" data-toggle="dropdown">Care</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="care.html">General Info</a>
+                            <a class="dropdown-item" href="care.html#linkDiet">Diet</a>
+                            <a class="dropdown-item" href="care.html#linkAilments">Ailments</a>
+                            <a class="dropdown-item" href="care.html#linkBreeding">Breeding</a>
+                            <a class="dropdown-item" href="care.html#linkBehavior">Behavior</a>
+                            <a class="dropdown-item" href="care.html#linkEnclosures">Enclosures</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="store.html">Store</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="mailing.html">Mailing List</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#">About</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="jumbotron mt-3 mx-4">
+        <h1 class="display-4 text-center">About</h1>
+        <div id="accordionWelcome">
+            <p class="lead text-center">Vivamus sit dui.</p>
+            <hr class="my-4">
+            <div class="card">
+                <div role="tab" class="card-header text-center">
+                    <a data-toggle="collapse" data-target="#welcome">Click to Read More</a>
+                    <div class="collapse" id="welcome" data-parent="#accordionWelcome">
+                        <div class="card-body">
+                            <h4>Sed suscipit sapien odio, sed auctor dui tempor id. Morbi volutpat nibh est, sit amet feugiat quam luctus proin. </h4>
+                            <p class="text-left">Nulla facilisi. Morbi in condimentum augue. Cras ullamcorper velit in iaculis ultrices. Vestibulum nunc augue, hendrerit non arcu sit amet, congue fermentum libero. Nunc pharetra sapien ut elit sagittis, vel dapibus odio ultricies. Nulla consectetur in urna eget laoreet. Aenean amet. </p>
+                            <p class="text-left">Sed sollicitudin nulla sapien, molestie venenatis lacus faucibus quis. Maecenas in diam sit amet dolor scelerisque facilisis. Suspendisse hendrerit nec nibh at hendrerit. Cras in arcu sed elit dapibus lacinia. Nam mattis libero libero, nec condimentum urna tincidunt ut. Morbi ac mattis ex, eget ullamcorper felis. Morbi a condimentum lectus. Etiam non nisl arcu. Quisque non erat eu risus sollicitudin aliquet. Donec suscipit odio libero, id tincidunt ligula tincidunt sed. Donec lacinia tellus vel dignissim volutpat. Praesent nisi. </p>
+                            <p class="text-left">Morbi nunc risus, blandit id semper eget, efficitur nec augue. Aliquam nec ipsum interdum, luctus leo non, efficitur neque. Sed mollis nibh non ligula egestas, nec maximus sem interdum. Pellentesque magna odio, malesuada quis mauris quis, laoreet molestie risus. Duis vel vestibulum magna. Curabitur feugiat, metus a lacinia auctor, nisi odio fermentum est, vel eleifend enim quam quis lorem. Vivamus cursus a leo id sodales. Sed congue viverra sem eu dignissim. Integer tortor mi, varius eu odio eu, porta congue nisl. Nulla eleifend, libero id suscipit venenatis, orci ante varius diam, sed rutrum eros nulla nec massa. Maecenas sit amet lacus id mauris fermentum varius. Proin et rutrum orci. Proin rhoncus, mi quis malesuada placerat, nisl dolor varius arcu, at dapibus libero turpis eu velit. Integer molestie. </p>
+                            <p class="text-left">Cras sit amet ipsum ut turpis feugiat vulputate. Quisque vel laoreet velit. Morbi dapibus ante libero, at ullamcorper elit venenatis eget. Aliquam eget consectetur sapien. Aenean ac facilisis sapien. Phasellus sit amet velit eu velit finibus rutrum vel nec justo. Integer rhoncus cursus pulvinar. Donec auctor turpis urna, vitae varius turpis dictum quis. Nunc ut laoreet mi. Sed ac bibendum enim, eget gravida ante. Phasellus id luctus turpis. Fusce porttitor dui sed arcu auctor sollicitudin. Duis luctus sem eget orci lobortis gravida. Sed id nisl non mauris tincidunt laoreet. </p> 
+                            <p class="text-left">Mauris blandit imperdiet consequat. Praesent quis sapien efficitur nunc accumsan interdum sollicitudin et lorem. Aenean sed accumsan elit. Donec eu eros vehicula, molestie tortor vitae, pulvinar sem. Cras sit amet ante vel dolor convallis lacinia ac in tortor. Nullam aliquet accumsan enim, et sodales libero suscipit sit amet. Sed mollis arcu eu ex sodales, vel laoreet nibh tincidunt. Lorem dolor. </p>
+                            <p class="text-left">Sed nec facilisis lectus, ut vehicula tellus. Nulla non nisl ut nisl pellentesque luctus. Ut feugiat blandit lobortis. Fusce accumsan diam sem, in tempus tellus varius eu mauris. </p>
+                            <p class="text-left">Vivamus at erat vel magna facilisis consequat et hendrerit purus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris aliquet, quam id malesuada suscipit, mi odio euismod augue, in porttitor ipsum leo ut lectus. Nunc vel velit vel elit sollicitudin sagittis. Suspendisse elementum molestie ligula, nec malesuada dui tempus et. Phasellus malesuada orci sed nibh mattis hendrerit. Quisque quis sodales nulla, tincidunt porttitor est. In tincidunt eget nibh a commodo. Donec eget lorem eget tellus euismod rutrum. Sed sit amet ex tellus. Aenean ut congue nulla, posuere vehicula ligula. Curabitur eget pharetra leo, in cursus dolor. Proin venenatis posuere mollis. Proin vulputate felis ligula, ac vulputate sem interdum lobortis. Suspendisse egestas tortor ac eros imperdiet ullamcorper. Lorem libero. </p>
+                            <p class="text-left">Etiam sit amet mollis magna, a laoreet risus. Aliquam vitae augue metus. Nulla eget cursus felis blandit. </p>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid px-0 my-2">
+        <div class="row mx-2 mx-md-4 align-items-center">
+            <div class="col-md-3 px-0 imgLPos d-none d-md-block">
+                <img src="img/navBrand.jpg" alt="Water dragon picture" class="img-fluid imgRounded shadow"/>
+            </div>
+            <div id="accordionPP" class="col-md-9 shadow px-1 px-md-5 pb-5 cardStyle">
+                <h3 id="linkPrivacy" class="h3Title text-center py-4">Privacy Policy</h3>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3"> <!-- px-1 improves readability by shrinking padding around text for small devices. px-md-3 restors padding to ALMOST card-body standard (3 = 1rem, standard is 1.25rem)-->
+                        <a class="cardLink" data-toggle="collapse" data-target="#p1">Privacy Policy for The Chinese Water Dragon and Reptile Care</a>
+                        <div class="collapse" id="p1" data-parent="#accordionPP">
+                            <div class="card-body px-2 px-md-3"> <!-- px-2 improves readability by shrinking padding around text for small devices. px-md-3 restors padding to ALMOST card-body standard (3 = 1rem, standard is 1.25rem)-->
+                                <p>Quisque laoreet purus at elementum molestie. Nam luctus massa at nunc porttitor. </p> 
+                                <p>Maecenas tincidunt neque eget enim bibendum faucibus. Sed auctor auctor scelerisque. Aliquam vel enim sit amet diam finibus molestie. Morbi condimentum, mauris non molestie condimentum, est elit imperdiet risus, vel consectetur dolor elit at. </p>
+                                <p>Cras sapien neque, ornare eget sollicitudin sed, interdum quis ex. Praesent pretium interdum sem, et dignissim nisi imperdiet condimentum. Proin efficitur porta tellus, a suscipit turpis tempor quis. Duis facilisis enim at dolor dignissim malesuada. Curabitur ut bibendum nulla. Praesent eget dictum elit, iaculis pellentesque est. Vivamus quis sapien porta nisi varius elementum nec in odio. Vestibulum eleifend, orci id posuere viverra, justo erat ultricies nisl, a ultricies mi lorem a est. Sed vivamus. </p> 
+                                <p>Maecenas a finibus erat. In et purus augue. Aliquam et tellus id tellus vestibulum consectetur. Phasellus sollicitudin dolor in eros iaculis posuere sed a erat vivamus. </p> 
+                                <p>Etiam non dui sed mi interdum semper quis at risus. Curabitur non porttitor neque. Etiam auctor, massa eu hendrerit convallis, ex neque cursus vel. </p>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#p2">Collection of Information</a>
+                        <div class="collapse" id="p2" data-parent="#accordionPP">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Donec eget iaculis justo, vel faucibus augue. Morbi id purus semper, ultricies urna ac, ornare quam. Suspendisse ornare volutpat blandit. Donec sagittis massa sed augue dictum aliquet. Mauris vitae posuere massa. In ullamcorper nunc eget velit vulputate, nec vehicula arcu mattis. Praesent a cursus lectus. Duis sit amet at. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#p3">Log Files</a>
+                        <div class="collapse" id="p3" data-parent="#accordionPP">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Praesent id nisl congue, finibus sem in, pretium leo. Praesent consequat turpis sed blandit egestas. Aenean et dui lorem. Vestibulum convallis ac leo ut feugiat. Donec imperdiet blandit dolor, in tincidunt nibh aliquet eget. Maecenas tempus quam at nunc venenatis, eu bibendum risus varius. Nunc porta est lectus, eu volutpat ligula ultrices eu. Duis nulla arcu, mattis nec lacus aliquam, pellentesque congue dolor. Etiam sagittis vitae nisi laoreet convallis. Nunc viverra eros vitae porta ante. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#p4">Cookies and Web Beacons</a>
+                        <div class="collapse" id="p4" data-parent="#accordionPP">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Maecenas libero elit, tincidunt eu ligula nec, pellentesque maximus purus. In eget efficitur ipsum. Cras volutpat, ante non varius rhoncus, nulla metus cursus felis, non maximus purus purus eget ipsum. Nunc tincidunt tellus in imperdiet tristique. Nullam eget ex cursus, facilisis turpis sed, vulputate risus. Proin suscipit mollis mauris vitae euismod. Morbi a ex accumsan, suscipit nibh sed, pellentesque urna. Praesent pretium aliquet pulvinar. Curabitur lobortis est ac velit ullamcorper commodo. Proin cursus finibus est. </p> 
+                                <p>Nullam fringilla ex nisl, id consectetur mi bibendum lobortis. Integer non fermentum libero. Nunc vehicula eros ac arcu iaculis sagittis. Nullam blandit metus at nulla condimentum, at feugiat ex cursus. Praesent faucibus velit sed libero molestie, at malesuada est commodo. Etiam vitae metus id purus luctus efficitur at id purus. Aliquam pulvinar mauris eget consectetur dictum. Donec blandit eleifend convallis. Duis tincidunt commodo tempor. Praesent at sem et tortor dictum consequat. Nulla in venenatis eros. Curabitur sit amet maximus lectus. Suspendisse id leo justo. Sed interdum ornare vivamus. </p> 
+                                <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam erat nulla, accumsan at faucibus eu, fermentum non ipsum. Aenean pulvinar, tellus congue auctor varius, nisi eros elementum mi, quis vestibulum mi ipsum vitae urna. Etiam viverra ut erat nec efficitur. Integer iaculis, ligula at consequat ullamcorper, nisl sapien ultrices ante, et porta purus leo non ex. Suspendisse pretium velit metus, quis tristique erat cras. </p>
+                                <p>Donec egestas tempor eros et tempor. Curabitur blandit felis a enim lobortis, vitae cursus velit molestie. Integer id dui quis sem scelerisque posuere at in arcu. In rhoncus accumsan ex, vel dignissim turpis viverra sed. Nullam viverra mauris id mauris congue, sit amet tincidunt ex luctus. Etiam gravida, lorem eget pulvinar ullamcorper, purus nisl congue velit, et elementum enim nunc mi. </p> 
+                                <p>In erat sapien, volutpat at ipsum quis, dignissim congue diam. Nunc euismod arcu purus, fermentum commodo nunc nisi. </p> 
+                                <p>Suspendisse placerat rutrum purus, a imperdiet lorem. Duis tincidunt nunc at orci egestas elementum. Suspendisse egestas sollicitudin quam, rutrum ullamcorper massa consequat eu. Nunc tincidunt, odio in gravida sagittis, odio diam sagittis arcu, porttitor viverra urna ligula laoreet neque. Fusce bibendum est leo, feugiat facilisis est auctor in. In luctus dolor vitae diam sagittis pretium. Nullam eleifend elit eget urna interdum posuere. Praesent a pulvinar ex, vitae auctor lacus. Duis tincidunt efficitur lorem bibendum tincidunt. Sed vitae neque lacus. Curabitur sed felis augue. Ut venenatis tristique velit eget consequat vel. </p> 
+                                <p>Sed vitae elit commodo, egestas eros nec, viverra sapien. Pellentesque eget commodo tellus. Phasellus sodales, magna vitae eleifend tempor, ipsum est ultricies felis, sed accumsan nulla dui vitae eros. In pharetra. </p>
+                                <p>Proin vitae tristique leo. Nullam mattis mollis lorem at accumsan. Praesent dolor:</p> 
+                                <ul> 
+                                    <li>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos dapibus nam. </li> 
+                                    <li>Donec in mi eu lectus gravida placerat a nec dui. Ut in rutrum lectus. Maecenas dignissim nibh elit, eget rutrum tortor consectetur id. Pellentesque posuere, elit sit amet volutpat erat curae. </li> 
+                                    <li>Suspendisse potenti. Fusce est ante, ornare ut velit quis, dapibus semper nisi. Duis fermentum tortor quis nunc hendrerit, quis ut. </li> 
+                                </ul> 
+                                <p>Nunc urna nulla, luctus placerat vehicula vitae, sollicitudin ut turpis. Interdum et erat curae. </p>
+                                <p>Cras eget finibus velit. Nullam vitae aliquam massa. In sit amet blandit turpis. Etiam ullamcorper lacus ut turpis consequat posuere. Vestibulum ut auctor ex, quis cursus libero. Curabitur venenatis iaculis nunc, vitae congue libero aliquet eu. Ut interdum massa lacus, a convallis velit malesuada quis. Sed lacinia hendrerit erat id consequat. Etiam volutpat sit amet mauris semper finibus. Duis nam. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row align-items-center mx-2 mx-md-4 mt-4 my-4">
+            <div id="accordionCopy" class="col-md-9 shadow px-1 px-md-5 pb-5 cardStyle">
+                <h3 id="linkCopy" class="h3Title text-center py-4">Copyright</h3>
+                <div class="card">
+                    <div role="tab" class="card-header px-1 px-md-3">
+                        <a class="cardLink" data-toggle="collapse" data-target="#c1">Copyright Notice</a>
+                        <div class="collapse" id="c1" data-parent="#accordionCopy">
+                            <div class="card-body px-2 px-md-3">
+                                <p>Proin tincidunt, tellus a efficitur pellentesque, nunc nisl lacinia nibh, non interdum sem magna viverra enim. Cras accumsan nisi arcu, quis placerat erat sodales et est. </p>
+                                <p>Sed ornare ante purus, vitae porttitor sapien tincidunt feugiat. Cras volutpat, nisi sed morbi. </p>
+                                <p>Sed sodales libero diam, at dictum ante ultricies vel. Donec vitae quam egestas, convallis sem id, feugiat libero. Proin non turpis a leo pellentesque vehicula sed sodales enim. Integer tincidunt arcu in augue venenatis, condimentum tincidunt diam congue. Nullam nec condimentum ex. </p>
+                                <p>Morbi ac laoreet sapien. Nam id maximus ligula. Vestibulum erat curae. </p>
+                                <p>Mauris tristique, arcu sed faucibus ultrices, turpis lectus placerat nisi, non convallis mi elit imperdiet dolor. Morbi vestibulum viverra consectetur. Nunc sollicitudin erat a lorem bibendum ornare. Integer et erat et justo tempus nullam. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 px-0 imgRPos d-none d-md-block">
+                <img src="img/navBrand.jpg" alt="Water dragon picture" class="img-fluid imgRounded shadow"/>
+            </div>
+        </div>
+
+        <div class="row mx-2 mx-md-4 align-items-center">
+            <div class="col-md-3 px-0 imgLPos d-none d-md-block">
+                <img src="img/navBrand.jpg" alt="Water dragon picture" class="img-fluid imgRounded shadow"/>
+            </div>
+            <div class="col-md-9 shadow px-1 px-md-5 pb-5 cardStyle">
+                <h3 id="linkContact" class="h3Title text-center py-4">Contact</h3>
+                <div class="col-md-10">
+                    <form>
+                        <div class="form-group row">
+                            <label for="firstName" class="col-md-2 col-form-label">First Name</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="lastName" class="col-md-2 col-form-label">Last Name</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="areaCode" class="col-md-2 col-form-label">Contact Tel. </label>
+                            <div class="col-5 col-md-3">
+                                <input type="tel" class="form-control" id="areaCode" name="areaCode" placeholder="Area code" />
+                            </div>
+                            <div class="col-7">
+                                <input type="tel" class="form-control" name="telNum" placeholder="Tel. number" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="email" class="col-md-2 col-form-label">Email</label>
+                            <div class="col-md-10">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col offset-md-2">
+                                May we contact you?
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" id="contactYes" name="contactRadios" value="yes" />
+                                    <label for="contactYes" class="form-check-label">Yes</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" id="contactNo" name="contactRadios" value="no" />
+                                    <label for="contactNo" class="form-check-label">No</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="feedback" class="col-md-2 col-form-label">Your Feedback</label>
+                            <div class="col-md-10">
+                                <textarea id="feedback" class="form-control" name="feedback" rows="8"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="offset-md-2 col-md-10">
+                                <button type="submit" class="btn btn-primary">Send Feedback</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <ul class="list-unstyled float-left">
+                         <li><h5 class="text-light">Links</h5></li>
+                         <li><a href="index.html">Home</a></li>
+                         <li><a href="care.html">Care</a></li>
+                         <li><a href="store.html">Store</a></li>
+                         <li><a href="events.html">Events</a></li>
+                         <li><a href="mailing.html">Mailing List</a></li>
+                    </ul>
+                </div>
+                <div class="col text-center">
+                     <span class="text-light">Copyright &copy; 1995 - 2012</span><br>
+                     <span class="text-light">Please read <a href="#linkCopy">Copyright Notice</a> | <a href="#linkPrivacy">Privacy Policy</a></span>
+                </div>
+                <div class="col">
+                     <ul class="list-unstyled text-center float-right">
+                         <li><a href="#">About</a></li>
+                         <li><a href="#linkContact">Contact</a></li>
+                     </ul>
+                </div>
+            </div>
+        </div> 
+    </footer> 
+     
+</body>
+</html>
